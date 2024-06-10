@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<body>
+
+    <div class="pagina">
+
+        <section data-secao="Video">
+            
+              <span id="element"></span>
+              
+            <div class="bloco bloco-video" data-bloco="">
+                <div class="row">
+                    <div class="column">
+                    </div>
+                </div>
+                <div class="row align-middle">
+                    <div class="column small-12 text-center">
+                        <h2>
+                            Video
+                        </h2>
+                    </div>
+                    <div class="column small-12">
+    
+                        <div data-transcricao>
+                            <div class="transcricao-midia modal">
+                                <div class="wrap-conteudo">
+                                    <h1 class="titulo" data-titulo>Transcrição do vídeo 1:</h1>
+                                    <div data-conteudo="">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquam eius beatae eveniet, dolorem quod atque praesentium fugiat tempora at ut quaerat reprehenderit earum magni quam, distinctio amet? Nesciunt, ducimus.</p>
+                                        
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos tempora quasi atque aut, maxime esse ullam laboriosam. Dolores, perspiciatis natus quaerat impedit blanditiis culpa recusandae ut consequatur corrupti adipisci.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <button class="btn botao-transcricao" data-botao-transcricao>Transcrição do Vídeo</button>
+    
+                        <div class="midia-wrapper midia-video">
+                            <div data-midia data-src="video.mp4" data-poster="video.jpg" data-captions="video.vtt"></div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+    
+                <div class="row">
+                    <div class="column">
+                        <div data-video-modal>
+                            <button class="btn" data-play-video>Vídeo em modal</button>
+                            
+                            <div data-midia data-src="video.mp4" data-poster="video.jpg" data-captions="video.vtt" data-video-modal></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="row align-middle">
+                    <div class="column small-6">
+                        
+                        <div data-midia data-src="m01l01.mp4" data-poster="m01l01.png" data-captions="m01l01.vtt" data-transcript-interactive="true"></div>
+                        
+                    </div>
+                    <div class="column small-6">
+                        <div id="transcript" style="overflow-y: auto; height: 330px; padding: 10px;"></div>
+                    </div>
+                   
+                </div> -->
+            </div>
+        </section>
+        
+    </div>
+
+
+    <style>
+        #transcript p > span{
+            /* opacity: 0; */
+            display: block;
+        }
+
+        #transcript span ~ span{
+            margin-top: 5px;
+        }
+
+        #transcript span.visto .ti-cursor{
+            display: none;
+        }
+    </style>
+
+</body>
+</html>

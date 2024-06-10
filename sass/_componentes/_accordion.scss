@@ -1,0 +1,138 @@
+// ínicio accordion
+.accordion {
+    background: transparent;
+
+    .accordion-item {
+        position: relative;
+
+        // Tokens
+        color: $color-neutral-100;
+
+        ~ .accordion-item{
+            // Tokens
+            margin-top: $spacing-quark;
+        }
+
+        .accordion-title {
+            text-decoration: none;
+            border: none;
+
+            // Tokens - Shape
+            background-color: $color-neutral-00;
+
+            // Tokens - Text
+            font-family: $font-family-display;
+            font-weight: $font-weight-400;
+            font-size: $font-size-xs;
+            color: $color-title-default;
+
+            // Tokens - Spacings
+            padding: $spacing-xxs;
+            padding-right: calc(3 * #{$spacing-xxs});
+
+            .numero, i{
+                display: block;
+
+                // Tokens
+                font-weight: $font-weight-300;
+            }
+            
+            // Number
+            .numero{
+                // Tokens
+                font-size: $font-size-xxl;
+                color: $color-brand-05-normal;
+                margin-bottom: $spacing-nano;
+            }
+
+            i{
+                // Tokens
+                font-size: $font-size-lg;
+                margin-bottom: $spacing-xxs;
+                color: $color-brand-05-normal;
+
+                &::before{
+                    margin: 0px;
+                }
+            }
+
+
+            &:hover{
+                // Tokens
+                background-color: $color-brand-05-lightest;
+            }
+
+            &:focus-visible{
+                -webkit-box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+                box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+                background-color: $color-brand-01-lightest;
+                outline: none;
+            }
+
+            .font-family-dyslexia &{
+                font-family: $font-family-base-accessible;
+            }
+
+            &::before {
+                font-family: $font-icones-index;
+                font-size: 24px;
+                margin-top: -0.7rem;
+                right: $spacing-xxs;
+                transition: transform .3s ease;
+                content: "\0e806";
+
+                // Tokens
+                color: $color-brand-05-normal;
+            }
+
+            &.accordion-title-numero::before, 
+            &.accordion-title-icon::before{
+                // Tokens
+                top: $spacing-xxs;
+
+                margin-top: 0;
+            }
+
+            
+        }
+
+        .accordion-content {
+            // Tokens
+            padding: $spacing-nano $spacing-xxs $spacing-xs;
+            padding-right: calc(3 * #{$spacing-xxs});
+            font-weight: $font-weight-400;
+            background-color: $color-brand-05-lightest;
+            color: $color-neutral-100;
+
+            border: 0;
+        }
+        
+        &.is-active {
+            // Tokens
+            border-bottom: $border-width-xs solid $color-brand-05-darkest;
+            background-color: $color-brand-05-lightest;
+
+            .accordion-title {
+                // Tokens
+                background-color: $color-brand-05-lightest;
+                
+                &::before {
+                    transform: rotate(45deg);
+                }
+                
+                &.accordion-title-numero, 
+                &.accordion-title-icon{
+                    &::before{
+                        // Tokens
+                        top: $spacing-xxs;
+                    }
+                }
+            }            
+        }
+
+        &:not(.is-active).seen {
+            .accordion-title::before { }
+        }
+    }
+}
+// fim accordion

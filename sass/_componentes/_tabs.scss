@@ -1,0 +1,189 @@
+.tabs {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    border: none;
+    background-color: transparent;
+    
+    .tabs-title {
+        position: relative;
+        width: 100%;
+
+        ~ .tabs-title{
+            // Tokens Spacing
+            margin-left: $spacing-quark;
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            padding: 0;
+            background-color: transparent;
+
+            // Tokens - Text
+            font-family: $font-family-display;
+            font-weight: $font-weight-500;
+            font-size: $font-size-xs;
+            color: $color-neutral-50;
+
+            // Tokens Line
+            border-bottom: $border-width-md solid $color-neutral-20;
+            
+            // Tokens - Spacings
+            padding-bottom: $spacing-nano;
+
+            [data-svg]{
+                // Tokens Spacing
+                margin-bottom: $spacing-xxs;
+            }
+                
+            // Focus
+            &:focus-visible{
+                // Tokens
+                -webkit-box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+                box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+
+                outline: none;
+                position: absolute;
+                z-index: 9999;
+                width: 100%;
+            }
+        }
+    
+        &.is-active {
+            a {
+                // Tokens Text
+                color: $color-neutral-100;
+
+                // Tokens Line
+                border-color: $color-brand-01-dark;
+
+                .numero{
+                    // Tokens Text
+                    color: $color-brand-01-dark;
+                }
+
+                i{
+                    // Tokens
+                    color: $color-brand-01-normal;
+                }
+            }
+        }
+    }
+    
+}
+
+.tabs-content {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    
+    .tabs-panel {
+        position: relative;
+        z-index: 2;
+
+        // Tokens Spacing
+        padding: $spacing-sm 0 0;
+
+        .titulo-content-tab{
+            // Tokens Text
+            font-weight: $font-weight-500;
+        }
+
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .banner-tab{
+        display: inline-block;
+        overflow: hidden;
+        
+        // Tokens Imagem
+        border-radius: $border-radius-lg;
+
+        //caso exista um tema ativo
+        [class*=tema] &{
+            border-radius: var(--border-radius-img);
+        }
+        
+        + *{
+            margin-top: $spacing-sm;
+        }
+    }
+}
+
+.tabs-group.timeline{
+    .tabs-title{
+        a{
+            font-weight: normal;
+            
+            // Tokens Headline
+            font-family: $font-family-decorative;
+            font-size: $font-size-sm;
+            color: $color-neutral-40;
+            border-bottom: $border-width-xs dotted $color-neutral-40;
+        }
+
+        &.is-active{
+            a{
+                border-color: $color-brand-01-dark;
+                border-bottom-style: solid;
+            }
+        }
+    }
+}
+
+.tabs-group.fill{
+    .tabs-title{
+        a{
+            font-weight: normal;
+
+            // Tokens Shape
+            background-color: $color-neutral-20;
+
+            // Tokens Line
+            border-color: $color-neutral-30;
+
+            // Tokens - Spacing
+            padding: $spacing-xxs;
+
+            &:hover{
+                background-color: $color-neutral-10;
+            }
+        }
+
+        &.is-active{
+            a{
+                // Tokens Shape
+                background-color: $color-neutral-100;
+
+                // Tokens Line
+                border-color: $color-brand-01-normal;
+                
+                // Tokens Text
+                color: $color-neutral-00;
+                
+                .numero{
+                    color: $color-brand-01-normal;
+                }
+
+                [data-svg]{
+                    path{
+                        fill: $color-brand-01-normal;
+                    }       
+                }
+            }
+        }
+    }
+
+    .tabs-content{
+        // Tokens Spacing
+        padding-left: $font-size-xl;
+        padding-right: $font-size-xl;
+        padding-bottom: $font-size-xxl;
+
+        background-color: $color-neutral-00;
+    }
+}

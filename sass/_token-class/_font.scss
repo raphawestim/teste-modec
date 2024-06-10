@@ -1,0 +1,56 @@
+/*
+    Font Family
+*/
+.font-family-base{font-family: $font-family-base!important;}
+.font-family-highlight{font-family: $font-family-display!important;}
+.font-family-dyslexia{font-family: $font-family-base-accessible!important;}
+
+
+/* 
+    Font Weight
+*/
+.font-weight-300{font-weight: $font-weight-300!important;}
+.font-weight-400{font-weight: $font-weight-400!important;}
+.font-weight-500{font-weight: $font-weight-500!important;}
+.font-weight-600{font-weight: $font-weight-600!important;}
+.font-weight-700{font-weight: $font-weight-700!important;}
+
+
+/*
+    Font Size
+*/
+.font-size-xxxs     {font-size: $font-size-xxxs!important;}
+.font-size-xxs      {font-size: $font-size-xxs!important;}
+.font-size-xs       {font-size: $font-size-xs!important;}
+.font-size-sm       {font-size: $font-size-sm!important;}
+.font-size-md       {font-size: $font-size-md!important;}
+.font-size-lg       {font-size: $font-size-lg!important;}
+.font-size-xl       {font-size: $font-size-xl!important;}
+.font-size-xxl      {font-size: $font-size-xxl!important;}
+.font-size-xxxl     {font-size: $font-size-xxxl!important;}
+.font-size-display  {font-size: $font-size-big!important;}
+.font-size-giant    {font-size: $font-size-giant!important;}
+
+
+/*
+    Line Height
+*/
+.line-height-xxs {line-height: $line-height-xxs!important;}
+.line-height-xs  {line-height: $line-height-xs!important;}
+.line-height-sm  {line-height: $line-height-sm!important;}
+.line-height-md  {line-height: $line-height-md!important;}
+.line-height-lg  {line-height: $line-height-lg!important;}
+.line-height-xl  {line-height: $line-height-xl!important;}
+
+
+/*
+    Letter Spacing
+*/
+.tracking-xxxs  {letter-spacing: $tracking-xxxs!important;}
+.tracking-xxs   {letter-spacing: $tracking-xxs!important;}
+.tracking-xs    {letter-spacing: $tracking-xs!important;}
+.tracking-sm    {letter-spacing: $tracking-sm!important;}
+.tracking-md    {letter-spacing: $tracking-md!important;}
+.tracking-lg    {letter-spacing: $tracking-lg!important;}
+.tracking-xl    {letter-spacing: $tracking-xl!important;}
+.tracking-xxl   {letter-spacing: $tracking-xxl!important;}

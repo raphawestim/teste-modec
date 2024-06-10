@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+
+    <link rel="stylesheet" href="vendors/foundation/foundation.min.css">
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+    <link rel="stylesheet" href="vendors/featherlight/featherlight.min.css">
+    <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendors/wow/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/46715be261.js" crossorigin="anonymous"></script>
+    <script src="vendors/modernizr/modernizr-custom.js"></script>
+    <script src="vendors/head/head.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+</head>
+
+<body class="tema-1">
+    <div class="limite-externo" id="wrapperPagina">
+        <header class="cabecalho-custom" id="cabecalho">
+
+            <!-- <div class="logo">
+                <img class="logoRapha" style="width: 200px;" src="data/imagens/index/logo-rapha.png" alt="">
+                <i data-svg="data/imagens/index/logo.svg" aria-label="Kosmos"></i>
+            </div> -->
+            <!-- <div class="seletor-temas">
+                <select name="" id="">
+                    <option value="1" selected>Tema 1</option>
+                    <option value="2">Tema 2</option>
+                    <option value="3">Tema 3</option>
+                </select>
+            </div> -->
+
+            <div class="group-header-custom">
+                <!-- <div class="curso-dados">
+                    <hgroup class="info">
+                        <h1 class="nome-curso" data-nome-curso></h1>
+                        <h2 class="nome-modulo" data-nome-modulo></h2>
+                        <h3 class="nome-licao" data-nome-licao></h3>
+                        <h4 class="nome-tela" data-nome-tela></h4>
+                    </hgroup>
+                </div> -->
+
+                <div class="curso-nav">
+                    <div class="grupo-topo">
+                        <nav>
+                            <ul>
+                                <li class="itens-menu">
+                                    <!-- <button type="button" class="bt-menu-acessibilidade" id="btMenuAcessibilidade"
+                                        aria-label="Menu de Acessibilidade" aria-expanded="false"
+                                        aria-controls="listaMenuAcessibilidade">
+                                        <i data-svg="data/imagens/index/icon_material-accessibility.svg"></i>
+                                    </button> -->
+                                    <div class="menu-acessibilidade" id="listaMenuAcessibilidade" aria-hidden="true">
+                                        <div class="menu-acessibilidade__header">
+                                            <div class="menu-acessibilidade__icon">
+                                                <i data-svg="data/imagens/index/icon_material-accessibility.svg"></i>
+                                            </div>
+                                            <span class="menu-acessibilidade__title">Acessibilidade</span>
+                                            <button class="menu-acessibilidade__close-menu-anchor"
+                                                id="closeMenuAcessibilidade" title="Fechar menu de acessibilidade">
+                                                <i data-svg="data/icones/icon-close-alt.svg"></i>
+                                            </button>
+                                        </div>
+
+                                        <ol>
+                                            <li class="menu-acessibilidade__item">
+                                                <div class="item__info">
+                                                    <span class="item__icon" aria-hidden="true">
+                                                        <span class="icon-index-fonte"></span>
+                                                    </span>
+                                                    <span class="item__texto" aria-hidden="true">Tamanho do texto</span>
+                                                </div>
+
+                                                <div class="item__buttons">
+                                                    <button id="btDiminuiFonte" aria-label="Diminuir fonte">
+                                                        <i data-svg="data/icones/icon-minus.svg"></i>
+                                                    </button>
+
+                                                    <span id="porcentagemTamanhoFonte" aria-hidden="true"></span>
+
+                                                    <button id="btAumentaFonte" aria-label="Aumentar fonte">
+                                                        <i data-svg="data/icones/icon-plus.svg"></i>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="menu-acessibilidade__item">
+                                                <div class="item__info">
+                                                    <span class="item__icon" aria-hidden="true">
+                                                        <span class="icon-index-contraste"></span>
+                                                    </span>
+                                                    <span class="item__texto" aria-hidden="true">Contraste</span>
+                                                </div>
+
+                                                <div class="item__input">
+                                                    <input type="checkbox" id="toggleContrast" />
+                                                    <label for="toggleContrast">Contraste</label>
+                                                </div>
+                                            </li>
+                                            <li class="menu-acessibilidade__item">
+                                                <div class="item__info">
+                                                    <span class="item__icon" aria-hidden="true">
+                                                        <span class="icon-index-dyslexia"></span>
+                                                    </span>
+                                                    <span class="item__texto" aria-hidden="true">Fonte mais
+                                                        legível</span>
+                                                </div>
+
+                                                <div class="item__input">
+                                                    <input type="checkbox" id="toggleDyslexia" />
+                                                    <label for="toggleDyslexia">Botão Fonte Mais Legível</label>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </li>
+
+                                <li class="itens-menu">
+                                    <button type="button" class="bt-menu" id="btMenu" title="Menu do curso">
+                                        <span class="texto show-for-sr">Menu do curso</span>
+                                        <i class="fa-solid fa-house"></i>
+                                    </button>
+                                </li>
+                                <li class="itens-menu">
+                                    <button type="button" class="bt-menu-suspenso" id="btMenuSuspenso"
+                                        title="Menu de âncoras da página" aria-expanded="false"
+                                        aria-controls="listaMenuSuspenso">
+                                        <i data-svg="data/imagens/index/menu-anchor.svg"></i>
+                                    </button>
+                                    <div class="menu-suspenso" id="listaMenuSuspenso" aria-hidden="true">
+                                        <div class="menu-suspenso__header">
+                                            <span class="menu-suspenso__title">Menu</span>
+                                            <button class="menu-suspenso__close-menu-anchor" id="closeMenuAnchor"
+                                                title="Fechar menu de ancoragem">
+                                                <i data-svg="data/imagens/icons/icon-close.svg"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="menu-suspenso__items">
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="grupo-base">
+                        <button type="button" class="bt-tamanho-fonte" id="btTamanhoFonte"
+                            title="Alterar tamanho da fonte">
+                            <span class="texto show-for-sr">Alterar tamanho da fonte</span>
+                            <span class="icon-index-letras"></span>
+                        </button>
+
+                        <button type="button" class="bt-contraste" id="btContraste" title="Alterar o modo de contraste">
+                            <span class="texto show-for-sr">Alterar o modo de contraste</span>
+                            <span class="icon-index-brilho"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- / Header -->
+
+        <main id="conteudoPrincipal" class="conteudo-principal" role="main">
+
+            <div id="areaConteudo" class="area-conteudo" tabindex="0">
+                <!-- ÁREA DE CARREGAMENTO DE CONTEÚDOS-->
+            </div>
+
+            <!-- Componente Side Drawer -->
+            <div id="boxConteudoLateral">
+                <div class="box-conteudo-lateral">
+                    <button class="btn-fechar-conteudo-lateral" type="button" id="btFecharBox"
+                        aria-label="Voltar para o conteúdo">
+                        <i aria-hidden="true" class="icon-index-fechar"></i>
+                    </button>
+
+                    <div id="conteudo"></div>
+                </div>
+            </div>
+
+            <!-- Componente Loader -->
+            <div class="loader">
+                <div class="loader-content">
+                    <span class="icone-loader"></span>
+                    <span class="show-for-sr">Carregando conteúdo</span>
+                </div>
+            </div>
+
+            <div class="scroll-indicator hidden" id="scrollIndicator"></div>
+        </main>
+        <!-- Conteúdo principal -->
+
+        <div class="faixa-finalizacao">
+            <div class="wrap-faixa">
+
+                <div class="mensagem-finalizacao">
+                    <div class="wrap-texto">
+                        <p>
+                            Você visualizou todo o conteúdo. Clique no botão para finalizar o curso.
+                        </p>
+                    </div>
+                    <div class="wrap-botao">
+                        <button class="btn btn-secondary" id="finalizarCurso">finalizar curso</button>
+                    </div>
+                </div>
+
+                <div class="curso-finalizado">
+                    <p>Este curso foi finalizado.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="rodape" id="rodape">
+            <div class="rodape-interno">
+                <div class="grupo-controles">
+                    <button value="Próxima tela" title="Próxima tela" class="bt-navegacao bt-avancar" id="btAvancar">
+                        <span class="texto">Avançar</span>
+                    </button>
+
+                    <button value="Tela anterior" title="Tela anterior" class="bt-navegacao bt-voltar" id="btVoltar">
+                        <span class="texto">Voltar</span>
+                    </button>
+                </div>
+
+                <div class="limite-progresso" id="progressoCurso">
+                    <div class="barra-progresso">
+                        <span class="barra"></span>
+                    </div>
+
+                    <div class="contador-telas" id="contadorTelas" role="status" aria-live="polite" aria-atomic="true">
+                        <span class="show-for-sr">tela</span>
+                        <span class="tela-atual" id="telaAtual"></span>
+                        <span class="show-for-sr">de</span>
+                        <span class="total-telas" id="scroll-indicatortotalTelas"></span>
+                    </div>
+
+                    <div id="statusTela" class="show-for-sr" role="status" aria-live="polite" aria-atomic="true"></div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        head.load([
+            "vendors/jquery/jquery-3.4.1.min.js",
+            "vendors/js-cookie/js.cookie-2.2.1.min.js",
+            "js/comunicacao/scofunctions.js",
+            "js/comunicacao/apiwrapper.js",
+            "js/comunicacao/controle-suspendData.js",
+            "js/comunicacao/finish.min.js"
+        ], function () {
+            head.load([
+                "vendors/foundation/what-input.js",
+                "vendors/foundation/foundation.min.js",
+
+                "vendors/featherlight/featherlight.min.js",
+                "vendors/is/is.min.js",
+                "vendors/jquery.match.height/jquery.matchHeight.js",
+                "vendors/jquery-ui/jquery-ui.min.js",
+                "vendors/jquery-ui/jquery.ui.touch-punch.min.js",
+                "vendors/jwplayer-8.1.8/jwplayer.js",
+                "vendors/slick/slick.min.js",
+                "vendors/tweenmax/TweenMax.min.js",
+                "vendors/wow/wow.min.js",
+
+                "js/componentes/accordion.js",
+                "js/componentes/animacao-entrada.js",
+                "js/componentes/flipcard.js",
+                "js/componentes/interacao-cliques.js",
+                "js/componentes/menu.js",
+                "js/componentes/menu-suspenso.js",
+                "js/componentes/menu-acessibilidade.js",
+                "js/componentes/modal.js",
+                "js/componentes/sliders.js",
+                "js/componentes/seletor-temas.js",
+                "js/componentes/tabs.js",
+                "js/componentes/tooltip.js",
+                "js/componentes/midia.js",
+                "js/componentes/side-drawer.js",
+                "js/componentes/svg.js",
+                "js/componentes/faixa-finalizacao.js",
+                "js/componentes/acessivel.js",
+                "js/componentes/correcoes-leitor-tela.js",
+
+                "js/exercicios/alternativas.js",
+                "js/avaliacao/avaliacao.js",
+                "js/avaliacao/interacao-avaliacao.js",
+                "js/gerencia-nota-curso.js",
+
+                "js/bloqueio-onepage.js",
+                "js/componentes.js",
+                "js/gerencia-interacoes.js",
+                "js/util.js"
+            ], function () {
+                head.load([
+                    "js/index-curso.js"
+                ]);
+            });
+        });
+    </script>
+</body>
+
+</html>

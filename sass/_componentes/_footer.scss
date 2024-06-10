@@ -1,0 +1,27 @@
+.rodape {
+    display: none;
+    width: $larguraRodape;
+    height: $alturaRodape;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    
+    @include small-only {
+        background-color: #fff;
+        top: auto;
+        bottom: 0;
+        box-shadow: 0 0 50px rgba(#000, .3);
+    }
+
+    .rodape-interno {
+        max-width: 1200px;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        position: relative;
+        @include small-only {
+            height: $alturaRodape;
+            width: calc(100% - 30px);
+        }
+    }
+}

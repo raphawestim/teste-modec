@@ -1,0 +1,107 @@
+.area-conteudo{
+    [data-conteudo]{
+        display: none;
+    }
+}
+
+#boxConteudoLateral{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 90%;
+    max-width: 445px;
+    height: 100vh;
+    background-color: $color-neutral-00;
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0; 
+    z-index: 10;
+    
+    @include shadow('4', $color-brand-05-darkest, $opacity-level-intense);
+
+    .conteudo-lateral-aberto &{
+        right: 0;
+        opacity: 1;
+        transition: 0.5s;
+        z-index: 999;
+    }
+}
+
+.box-conteudo-lateral{
+    overflow-x: hidden;
+    height: 100%;
+
+    #conteudo{}
+
+    .conteudo-lateral{
+        display: block;
+    }
+
+    .item-wrap-header{
+        position: relative;
+        z-index: 1;
+        background: $color-brand-05-darkest;
+        padding: $spacing-md $spacing-sm;
+        
+        @include small-only{
+            padding: $spacing-xxs $spacing-xs;
+        }
+
+        &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            width: $spacing-nano;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: $color-brand-01-normal;
+        }
+
+        h5{
+            margin-bottom: $spacing-xxxs;
+            color: $color-neutral-00;
+        }
+
+        p{
+            color: $color-brand-05-light;
+            font-size: 14px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        &.fixed{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .item-wrap-body{
+        padding: $spacing-md $spacing-sm;
+
+        @include small-only{
+            padding: $spacing-xxs $spacing-xs;
+        }
+
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .btn-fechar-conteudo-lateral{
+        position: absolute;
+        right: $spacing-nano;
+        top: 8px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color-brand-05-darkest, .4);
+        border-radius: $border-radius-circular;
+        z-index: 2;
+        color: $color-neutral-00;
+    }
+}

@@ -1,0 +1,240 @@
+.card {
+    position: relative;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Tokens - Shape
+    border-radius: $border-radius-xl;
+    //caso exista um tema ativo
+    [class*=tema] &{
+        border-radius: var(--border-radius);
+    }
+    background-color: $color-neutral-00;
+    @include shadow($shadow-level-4, $color-neutral-20, 1);
+
+    // Tokens - Text
+    color: $color-brand-05-darkest;
+    padding: $spacing-sm;
+    border: 0;
+
+    &__icon{
+        // Tokens
+        margin-bottom: $spacing-md;
+
+        svg path{
+            // Tokens
+            fill: $color-brand-01-dark;
+        }
+    }
+
+    &__label{
+        // Tokens
+        font-size: $font-size-xxs;
+        line-height: $line-height-md;
+        margin-bottom: $spacing-xxxs;
+        color: $color-brand-01-dark;
+    }
+
+    &__text{
+        &__titulo{
+            // Tokens
+            font-weight: $font-weight-500;
+            margin-bottom: $spacing-xxxs;
+        }
+    }
+
+    .numero{
+        // Tokens
+        font-family: $font-family-display;
+        font-size: $font-size-big;
+        color: $color-brand-01-dark;
+        letter-spacing: $tracking-xxxs;
+        margin-bottom: $spacing-nano;
+    }
+
+    hr{
+        // Tokens
+        border-radius: $border-radius-sm;
+        //caso exista um tema ativo
+        background-color: $color-brand-01-dark;
+        
+        [class*=tema] &{
+            border-radius: var(--border-radius);
+        }
+
+        border: 0;
+        width: 100%;
+        height: 4px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    // Modificadores
+    &--color{
+        // Tokens - Shape
+        background-color: $color-brand-01-normal;
+        color: $color-neutral-100;
+
+        .numero{
+            color: $color-brand-01-darkest;
+        }
+
+        .card__label{
+            color: $color-neutral-100
+        }
+
+        .card__icon{
+            svg path{
+                // Tokens
+                fill: $color-brand-01-darkest;
+            }
+        }
+
+        hr{
+            background-color: $color-brand-01-darkest;
+        }
+    }
+
+
+    
+
+
+    
+
+    &--image{
+        padding: 0 0 $spacing-sm 0;
+
+        &__wrap-img{
+            margin: $spacing-nano $spacing-nano $spacing-xxs;
+            img {
+                border-radius: $border-radius-lg;
+            }
+        }
+
+        &__wrap-text{
+            margin: 0 $spacing-sm $spacing-sm;
+        }
+    }
+
+
+
+    &__image{
+        // Tokens
+        margin-bottom: $spacing-xxs;
+    
+        position: relative;
+    
+        &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            height: 100%;
+    
+            // Tokens
+            left: -#{$spacing-sm};
+            top: -#{$spacing-sm};
+            width: calc(100% + (2 * #{$spacing-sm}));
+            background-color: $color-brand-01-normal;
+        }
+    
+        img{
+            // Tokens
+            border-radius: $border-radius-md;
+            
+            //caso exista um tema ativo
+            [class*=tema] &{
+                border-radius: var(--border-radius);
+            }
+
+            position: relative;
+            z-index: 2;
+        }
+        
+    }
+    
+        
+    .card-numero{
+        // Tokens
+        line-height: $line-height-sm;
+        font-family: $font-family-display;
+        font-weight: $font-weight-700;
+        font-size: $font-size-big;
+        margin-bottom: $spacing-xxs;
+        color: $color-brand-01-light;
+    }
+
+    
+}
+
+.card-circle{
+    margin-top: $spacing-xl;
+    
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        
+        // Tokens
+        border-radius: $border-radius-circular;
+        background-color: $color-neutral-00;
+
+        //caso exista um tema ativo
+        [class*=tema] &{
+            border-radius: var(--border-radius-card-circle);
+        }
+        
+        [data-svg]{
+            display: flex;
+        }
+    }
+
+    &__text{
+        text-align: center;
+    
+        &__title{
+            margin-top: $spacing-xxs;
+        }
+
+        p{
+            margin-top: $spacing-xxxs;
+        }
+    
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.card-circle-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 268px;
+    height: 268px;
+    border: 16px solid;
+
+    // Tokens
+    border-radius: $border-radius-circular;
+    border-color: $color-brand-01-light;
+
+    [class*=tema] &{
+        border-radius: var(--border-radius-card-circle);
+    }
+
+    + .text-card-circle{
+        margin-top: $spacing-xs;
+
+        h6 + *{
+            margin-top: $spacing-xxs;
+        }
+
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

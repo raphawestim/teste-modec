@@ -1,0 +1,41 @@
+.avaliacao {
+    display: table;
+    width: 100%;
+    height: 100vh;
+
+    > * {
+        display: table-cell;
+        // vertical-align: middle;
+    }
+
+    &-perguntas,
+    &-feedback {
+        padding: 40px 0;
+        @include medium-up {
+            padding-top: 110px;
+        }
+    }
+
+    &-introducao { }
+
+    &-perguntas {
+        .numero-questao {
+            display: none;
+        }
+
+        .feedback {
+            display: none;
+        }
+    }
+
+    &-feedback {
+        .botao {
+            display: block;
+            margin-top: 40px;
+        }
+    }
+
+    .oculto {
+        display: none;
+    }
+}

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<body>
+    <div class="pagina">
+        <section data-secao="Exercício Múltipla Escolha">
+            <!-- Exercício alternativas -->
+            <div class="bloco" data-bloco="">
+                <div class="row">
+                    <div class="column">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Exercício Múltipla Escolha
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column small-12 medium-10">
+                        <div class="exercicio exercicio-alternativas" data-exercicio data-tipo="alternativas" id="exe01">
+                            <!-- Enunciado -->
+                            <div class="enunciado">
+                                <h4 class="titulo-exercicio"><span class="texto">Exercício Múltipla Escolha</span></h4>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolore sapiente architecto repellendus modi, voluptatem deleniti laudantium veniam nesciunt libero molestias incidunt iste alias eius aspernatur dolorem illo ipsa sunt?
+                                </p>
+
+                                <h5>Natus, enim?</h5>
+                            </div>
+                            <!-- Fim Enunciado -->
+                            <!-- Alternativas -->
+                            <div class="lista-alternativas">
+                                <div class="alternativa">
+                                    <input type="radio">
+                                    <label class="texto">
+                                        <span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                        </span> 
+                                    </label>
+                                </div>
+                                <div class="alternativa">
+                                    <input type="radio">
+                                    <label class="texto">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, at excepturi dolores voluptas iure magni? Unde ducimus nam voluptate error, sed esse, molestias ex fuga sapiente fugiat natus tenetur dicta!
+                                    </label>
+                                </div>
+                                <div class="alternativa">
+                                    <input type="radio">
+                                    <label class="texto">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, consequatur incidunt! Doloremque, excepturi dolorum? Iusto culpa eos repudiandae, modi fugiat, animi rerum tenetur ipsum, alias possimus accusantium minus veritatis tempora!
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Fim Alternativas -->
+
+                            <div class="acoes">
+                                <button class="btn" id="btConfirmar"> <span class="texto">Confirmar</span> </button>
+                                <button class="btn" id="btReverFeedback"> <span class="texto">Rever <i>feedback</i></span> </button>
+                            </div>
+                        </div>
+
+                        <script>
+                            exercicioAlternativas('exe01', [1], true);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-secao="Exercício Alternativa">
+            <div class="bloco" data-bloco="">
+                <div class="row">
+                    <div class="column">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Exercício Alternativa
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column small-12 medium-10">
+                        <div class="exercicio exercicio-alternativas" data-exercicio data-tipo="alternativas" id="exe02">
+                            <!-- Enunciado -->
+                            <div class="enunciado">
+                                <h4 class="titulo-exercicio"><span class="texto">Exercício Alternativa</span></h4>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolore sapiente architecto repellendus modi, voluptatem deleniti laudantium veniam nesciunt libero molestias incidunt iste alias eius aspernatur dolorem illo ipsa sunt?
+                                </p>
+
+                                <h5>Natus, enim?</h5>
+                            </div>
+                            <!-- Fim Enunciado -->
+                            <!-- Alternativas -->
+                            <div class="lista-alternativas">
+                                <div class="alternativa">
+                                    <input type="radio">
+                                    <label class="texto">
+                                        <span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                        </span> 
+                                    </label>
+                                </div>
+                                <div class="alternativa">
+                                    <input type="radio">
+                                    <label class="texto">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, at excepturi dolores voluptas iure magni? Unde ducimus nam voluptate error, sed esse, molestias ex fuga sapiente fugiat natus tenetur dicta!
+                                    </label>
+                                </div>
+                                <div class="alternativa">
+                                    <input type="radio">
+                                    <label class="texto">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, consequatur incidunt! Doloremque, excepturi dolorum? Iusto culpa eos repudiandae, modi fugiat, animi rerum tenetur ipsum, alias possimus accusantium minus veritatis tempora!
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Fim Alternativas -->
+
+                            <div class="acoes">
+                                <button class="btn" id="btConfirmar"> <span class="texto">Confirmar</span> </button>
+                                <button class="btn" id="btReverFeedback"> <span class="texto">Rever <i>feedback</i></span> </button>
+                            </div>
+                        </div>
+
+                        <script>
+                            exercicioAlternativas('exe02', [1], false);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section data-secao="Button">
+            <div class="bloco" data-bloco="">
+                <div class="row">
+                    <!-- Button Primary -->
+                    <div class="column medium-6">
+                        <h4>Button Primary</h4>
+                    
+                        <button class="btn" type="button">Button Primary</button>
+
+                        <br />    
+                        
+                        <button class="btn" type="button">
+                            Button Primary
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+                        
+                        <br />
+    
+                        <button class="btn" type="button" disabled>
+                            Button Primary
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Button Secondary -->
+                    <div class="column medium-6">
+                        <h4>Button Secondary</h4>
+    
+                        <button class="btn btn--secondary" type="button">Button Secondary</button>
+    
+                        <br />
+    
+                        <button class="btn btn--secondary" type="button">
+                            Button Secondary
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+    
+                        <br />
+    
+                        <button class="btn btn--secondary" type="button" disabled>Button Secondary</button>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!-- Button Circular Primary -->
+                    <div class="column medium-6">
+                        <h4>Button Circular Primary</h4>
+                        
+                        <button class="btn btn__circle btn--animation-slide" type="button">
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+
+                        <br />
+
+                        <button class="btn btn__circle btn__circle--border-dotted btn--animation-slide" type="button">
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+
+                        <br />
+
+                        <button class="btn btn__circle btn--animation-slide" type="button" disabled>
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Button Circular Secondary -->
+                    <div class="column medium-6">
+                        <h4>Button Circular Secondary</h4>
+    
+                        <button class="btn btn__circle btn__circle--secondary btn--animation-slide" type="button">
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+
+                        <br />
+                        
+                        <button class="btn btn__circle btn__circle--secondary btn__circle--border-dotted btn--animation-slide" type="button">
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+
+                        <br />
+                        
+                        <button class="btn btn__circle btn__circle--secondary btn--animation-slide" type="button" disabled>
+                            <i data-svg="data/icones/icon-arrow.svg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Button Alternatives -->
+                    <div class="column medium-6">
+                        <h4>Button Alternatives</h4>
+                        
+                        <button class="btn btn__circle btn__circle--alternative btn__circle--no-border btn--animation-spin" type="button">
+                            <i data-svg="data/icones/icon-close.svg" aria-hidden="true"></i>
+                        </button>
+
+                        <br />
+
+                        <button class="btn btn__circle btn--animation-slide" type="button">
+                            <span class="number">2</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section data-secao="Tabs"> 
+            <!-- Tabs -->
+            <div class="bloco" data-bloco="">
+                <div class="row">
+                    <div class="column medium-12">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Tabs
+                        </p>
+                    </div>
+                    <div class="column medium-12">
+                        <div class="tabs-group" data-tabs-group>
+                            <ul class="tabs" data-tabs>
+                                <li class="tabs-title is-active">
+                                <a href="#panel-1"><span class="numero">01.</span> lorem ipsum tab</a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-2"><span class="numero">02.</span> lorem ipsum tab</a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-3"><span class="numero">03.</span> lorem ipsum tab</a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-4"><span class="numero">04.</span> lorem ipsum tab</a>
+                                </li>
+                            </ul>
+                            <div class="tabs-content" data-tabs-content="example-tabs">
+                            <div class="tabs-panel is-active" id="panel-1">
+                                <h5 class="titulo-content-tab">Lorem ipsum</h5>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quia vel vero doloribus, consequatur reprehenderit! Ullam, laudantium non. Voluptate rem beatae recusandae id ducimus maiores vero quo fuga, voluptatem quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi reprehenderit quidem provident quaerat, repellat fuga accusamus corporis error temporibus minima distinctio veritatis esse rerum repellendus atque. Minima iusto placeat cumque!
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-2">
+                                <h5 class="titulo-content-tab">Lorem ipsum</h5>
+                                <p>
+                                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste minus libero atque accusantium explicabo, expedita dolores cupiditate ex officiis id, nisi iusto! Accusantium pariatur praesentium et odit dolorem quas rerum?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nemo, sapiente libero nostrum quis pariatur reiciendis culpa, autem veniam fuga placeat harum velit vel quam eum similique eius consequatur cupiditate.
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-3">
+                                <h5 class="titulo-content-tab">Lorem ipsum</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit inventore saepe dolorum praesentium laborum esse eos quidem natus voluptatum, quaerat minima nisi sed, animi, quibusdam quo blanditiis perferendis temporibus quis?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit inventore saepe dolorum praesentium laborum esse eos quidem natus voluptatum, quaerat minima nisi sed, animi, quibusdam quo blanditiis perferendis temporibus quis?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit inventore saepe dolorum praesentium laborum esse eos quidem natus voluptatum, quaerat minima nisi sed, animi, quibusdam quo blanditiis perferendis temporibus quis?
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-4">
+                                <h5 class="titulo-content-tab">Lorem ipsum</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolor, a illo cupiditate pariatur perferendis impedit sunt ullam quaerat voluptate. Deserunt ullam mollitia sequi dolorum quisquam nesciunt vero repudiandae laboriosam.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolor, a illo cupiditate pariatur perferendis impedit sunt ullam quaerat voluptate. Deserunt ullam mollitia sequi dolorum quisquam nesciunt vero repudiandae laboriosam.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column medium-12">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Tabs Timeline
+                        </p>
+                    </div>
+                    <div class="column medium-12">
+                        <div class="tabs-group timeline" data-tabs-group>
+                            <ul class="tabs" data-tabs>
+                                <li class="tabs-title is-active">
+                                <a href="#panel-1"><span class="numero">2001</span></a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-2"><span class="numero">2010</span></a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-3"><span class="numero">2012</span></a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-4"><span class="numero">2015</span></a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-5"><span class="numero">2020</span></a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-6"><span class="numero">2023</span></a>
+                                </li>
+                            </ul>
+                            <div class="tabs-content" data-tabs-content="example-tabs">
+                                <div class="tabs-panel is-active" id="panel-1">
+                                    <div class="banner-tab">
+                                        <img src="data/imagens/img-tab-banner.jpg" alt="">
+                                    </div>
+                                    
+                                    <h5 class="titulo-content-tab">domain specific language FIFO</h5>
+                                    <p>
+                                        Vaporware looks good to me little Bobby Tables meta-programming S3 contributor SRE asynchronous linked list internet button. State stack driver websockets junior domain Medium post uglify cross-post. Free as in beer i cloud convention dog-piling virtual DOM Github. Configuration Backbone.js bubble sort rebase service worker Chrome module.
+                                    </p>
+                                </div>
+                                <div class="tabs-panel" id="panel-2">
+                                    <h5 class="titulo-content-tab">interface incognito</h5>
+                                    <p>
+                                        Browser npm team-player elixir progressive web app OOP stack free as in beer. Mutation observer imagemagick val distributed sudo spy constant. Subclass OTP freelancer ping Stack Overflow lazy functional programming browser lazy load. CLI blockchain observer pattern distributed hipchat documentation driven lazy JSON callback shadow DOM. Gate-keeping concurrent instance little Bobby Tables JavaScript frontend bootcamp reflog scalable.
+                                    </p>
+                                </div>
+                                <div class="tabs-panel" id="panel-3">
+                                    <h5 class="titulo-content-tab">SRE shareware</h5>
+                                    <p>
+                                        Developer avocado Ada Lovelace Vue convention node_modules freelancer. Internet Explorer React website blockchain tree shaking Ubuntu protected UI stack trace. Reflection var private commit static REST.
+                                    </p>
+                                </div>
+                                <div class="tabs-panel" id="panel-4">
+                                    <h5 class="titulo-content-tab">transpile i</h5>
+                                    <p>
+                                        Bubble sort font Edge package manager git node_modules browser. Resource font singleton Github cowboy coding i devops. .NET container RSS feed domain internet button S3 containerized.
+                                    </p>
+                                </div>
+                                <div class="tabs-panel" id="panel-5">
+                                    <h5 class="titulo-content-tab">remote procedure call programmer</h5>
+                                    <p>
+                                        Hipchat raspberry pi duck typing AWS UI contributor website. Ruby free as in beer bike-shedding FP interface LGTM sudo REST OTP linked list. Waterfall webpack asynchronous progressive web app val Stack Overflow FP promise. Font naming things website compilation i distributed. Strongly typing Reddit Kubernetes ICO a place for everything .NET pivot UX.
+                                    </p>
+                                </div>
+                                <div class="tabs-panel" id="panel-6">
+                                    <h5 class="titulo-content-tab">domain pair programming</h5>
+                                    <p>
+                                        Static typing contribute CLI LLVM Byzantine fault tolerance void resource merge sort. Perf matters abstraction Angular linker open source domain state Hacker News class. Domain specific language domain brownfield reactive machine learning heap sort. GraphQL UI directed acyclic graph frontend scrum master branch a place for everything. Polemical thinking resolve compilation hardcoded dynamic budget OTP compile OOP.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column medium-12">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Tabs Fill
+                        </p>
+                    </div>
+                    <div class="column medium-12">
+                        <div class="tabs-group fill" data-tabs-group>
+                            <ul class="tabs" data-tabs>
+                                <li class="tabs-title is-active">
+                                <a href="#panel-1"><span class="numero">01.</span> freelancer</a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-2"><span class="numero">02.</span> duck typing</a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-3"><span class="numero">03.</span> XML</a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-4"><span class="numero">04.</span> public</a>
+                                </li>
+                            </ul>
+                            <div class="tabs-content" data-tabs-content="example-tabs">
+                            <div class="tabs-panel is-active" id="panel-1">
+                                <h5 class="titulo-content-tab">freelancer</h5>
+                                <p>
+                                    Static typing contribute CLI LLVM Byzantine fault tolerance void resource merge sort. Perf matters abstraction Angular linker open source domain state Hacker News class. Domain specific language domain brownfield reactive machine learning heap sort. GraphQL UI directed acyclic graph frontend scrum master branch a place for everything. Polemical thinking resolve compilation hardcoded dynamic budget OTP compile OOP.
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-2">
+                                <h5 class="titulo-content-tab">duck typing</h5>
+                                <p>
+                                    JQuery pattern cloud stack dynamic types off-by-one error Cloudfront contribute uglify. MVP Chrome constant LGTM UI JSON quick sort DSL programmer. Callback hell killer app tree shaking containerized pairing stack trace module stand-up dynamic types clean code.
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-3">
+                                <h5 class="titulo-content-tab">XML</h5>
+                                <p>
+                                    UI casting shadow DOM distributed lang security gradle budget JVM. Ubuntu RPC dynamic types senior-engineer CLI greedy algorithm. Modern bundle emoji parent scrum master LLVM data store. Pair programming legacy code var polemical thinking compile Firefox CSV clean architecture.
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-4">
+                                <h5 class="titulo-content-tab">public</h5>
+                                <p>
+                                    DOM document object model functional programming proof of stake greenfield git antipattern package manager UI child. Domain Byzantine fault tolerance queue interface quick sort keycaps. Dynamic types senior document object model k backend legacy compilation tabs vs spaces.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column medium-12">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Tabs Fill Icone
+                        </p>
+                    </div>
+                    <div class="column medium-12">
+                        <div class="tabs-group fill" data-tabs-group>
+                            <ul class="tabs" data-tabs>
+                                <li class="tabs-title is-active">
+                                <a href="#panel-1">
+                                    <figure data-svg="data/imagens/icon-tab.svg"></figure>
+                                    <span class="numero">01.</span> machine learning
+                                </a>
+
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-2">
+                                    <figure data-svg="data/imagens/icon-tab.svg"></figure>
+                                    <span class="numero">02.</span> CS degree
+                                </a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-3">
+                                    <figure data-svg="data/imagens/icon-tab.svg"></figure>
+                                    <span class="numero">03.</span> antipattern
+                                </a>
+                                </li>
+                                <li class="tabs-title">
+                                <a href="#panel-4">
+                                    <figure data-svg="data/imagens/icon-tab.svg"></figure>
+                                    <span class="numero">04.</span> cache
+                                </a>
+                                </li>
+                            </ul>
+                            <div class="tabs-content" data-tabs-content="example-tabs">
+                            <div class="tabs-panel is-active" id="panel-1">
+                                <h5 class="titulo-content-tab">machine learning</h5>
+                                <p>
+                                    Minimum viable product DAG state MacBook S3 static private spaghetti code Internet Explorer. Atomic design hardcoded TL TOML state killer app UX strongly typing LIFO. Gzip Chrome ELF little Bobby Tables views node_modules minification.
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-2">
+                                <h5 class="titulo-content-tab">CS degree</h5>
+                                <p>
+                                    Continuous integration command-line imagemagick tabs vs spaces greedy algorithm Ruby. Spaghetti code dynamic types constant Angular CSS grid shareware branch. Spy tabs vs spaces state pivot devops concurrent.
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-3">
+                                <h5 class="titulo-content-tab">antipattern</h5>
+                                <p>
+                                    DOM model reactive spaghetti code consensus imagemagick dog-piling asynchronous. Constant antipattern parent TOML LGTM containerized microservices controller dog-piling dependency injection. Test-driven blog database architecture idiosyncratic contexts lazy load. Font Linux JavaScript frontend architecture atomic design. Documentation driven subclass serverless first in first out build tool markup lazy eval injection document object model.
+                                </p>
+                            </div>
+                            <div class="tabs-panel" id="panel-4">
+                                <h5 class="titulo-content-tab">cache</h5>
+                                <p>
+                                    Stateless singleton circle back f*** api command-line freelancer. Domain heap sort bitcoin frontend commit little Bobby Tables. Developer domain specific language JVM container duck typing idiosyncratic contexts React polemical thinking program native.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Tabs -->
+        </section>
+
+        <section data-secao="Slider">
+
+            <!-- Slider -->
+            <div class="bloco" data-bloco="">
+                <div class="row">
+                    <div class="column">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Slider
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column small-12">
+                        <div class="slider-wrapper">
+                            <div class="content-slider">
+                                <div class="slide">
+                                    <div class="row align-middle">
+                                        <div class="column small-12 medium-6">
+                                            <div class="border-img">
+                                                <img src="data/imagens/foto-slider.jpg" alt="" class="float-center">
+                                            </div>
+                                        </div>
+                                        <div class="column small-12 medium-6">
+                                            <span class="numero-slider">01</span>
+                                            <h5>hipchat linker</h5>
+                                            <p>
+                                                Document object model gradle minimum viable product k minification tl;dr consensus Cloudfront class. Code-splitting OTP developer avocado JSON consensus perf matters. Remote pull request package manager driver greedy algorithm polemical thinking Ubuntu. Cloudfront brownfield proof of stake class free as speech site reliability engineer api pattern. Remote procedure call API DSL maintainable budget stack developer freelancer IRC.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="row align-middle">
+                                        <div class="column small-12 medium-6">
+                                            <div class="border-img">
+                                                <img src="data/imagens/foto-slider.jpg" alt="" class="float-center">
+                                            </div>
+                                        </div>
+                                        <div class="column small-12 medium-6">
+                                            <span class="numero-slider">02</span>
+                                            <h5>hipchat linker</h5>
+                                            <p>
+                                                Document object model gradle minimum viable product k minification tl;dr consensus Cloudfront class. Code-splitting OTP developer avocado JSON consensus perf matters. Remote pull request package manager driver greedy algorithm polemical thinking Ubuntu. Cloudfront brownfield proof of stake class free as speech site reliability engineer api pattern. Remote procedure call API DSL maintainable budget stack developer freelancer IRC.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="row align-middle">
+                                        <div class="column small-12 medium-6">
+                                            <div class="border-img">
+                                                <img src="data/imagens/foto-slider.jpg" alt="" class="float-center">
+                                            </div>
+                                        </div>
+                                        <div class="column small-12 medium-6">
+                                            <span class="numero-slider">03</span>
+                                            <h5>hipchat linker</h5>
+                                            <p>
+                                                Document object model gradle minimum viable product k minification tl;dr consensus Cloudfront class. Code-splitting OTP developer avocado JSON consensus perf matters. Remote pull request package manager driver greedy algorithm polemical thinking Ubuntu. Cloudfront brownfield proof of stake class free as speech site reliability engineer api pattern. Remote procedure call API DSL maintainable budget stack developer freelancer IRC.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="row align-middle">
+                                        <div class="column small-12 medium-6">
+                                            <div class="border-img">
+                                                <img src="data/imagens/foto-slider.jpg" alt="" class="float-center">
+                                            </div>
+                                        </div>
+                                        <div class="column small-12 medium-6">
+                                            <span class="numero-slider">04</span>
+                                            <h5>hipchat linker</h5>
+                                            <p>
+                                                Document object model gradle minimum viable product k minification tl;dr consensus Cloudfront class. Code-splitting OTP developer avocado JSON consensus perf matters. Remote pull request package manager driver greedy algorithm polemical thinking Ubuntu. Cloudfront brownfield proof of stake class free as speech site reliability engineer api pattern. Remote procedure call API DSL maintainable budget stack developer freelancer IRC.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Fim Slider -->
+        </section>
+
+        
+
+
+        <section data-secao="Modais">
+
+            <section data-secao="Botões/Modal">
+                <!-- Modal with icon -->
+                <div class="bloco" data-bloco="">
+                    <div class="row">
+                        <div class="column">
+                            <p class="label-texto">
+                                <span class="barra" aria-hidden="true">/</span> Modal
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-center text-center">
+                        <div class="column small-12">
+                            <button class="btn" data-modal="#idModalIcone">Modal Circulo Ícone</button>
+                        </div>
+                        <div class="column small-12">
+                            <button class="btn" data-modal="#idModalImg">Modal Circulo Img</button>
+                        </div>
+                        <div class="column small-12">
+                            <button class="btn" data-modal="#idModalImgFull">Modal Img</button>
+                        </div>
+                        <div class="column small-12">
+                            <button class="btn btn-secondary" data-modal="#neutro">Feedback Neutro</button>
+                        </div>
+                        <div class="column small-12">
+                            <button class="btn btn-secondary" data-modal="#positivo">Feedback Positivo</button>
+                        </div>
+                        <div class="column small-12">
+                            <button class="btn btn-secondary" data-modal="#negativo">Feedback Negativo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Botões/Modal -->
+            </section>
+
+            <!-- Flip card with image -->
+            <div class="bloco" data-bloco="">
+                <div class="row">
+                    <div class="column">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Flip card with image
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-center">
+                    <div class="column small-12 medium-6 large-4">
+                        <div class="flip-card-item" flip-card-item>
+                            <div class="flip-card-frente" data-interchange="[data/imagens/bg-flipcard.jpg, small]" card-frente>
+                                <div class="frente-interno">
+                                    <p class="label-card">
+                                        <span class="barra">/</span> 01
+                                    </p>
+                                    <h5>tree shaking LIFO</h5>
+                                </div>
+                                <div class="icone-status">
+                                    <i aria-hidden="true" class="icon-index-seta_direita_bold"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-verso" card-verso>
+                                <div class="verso-interno">
+                                    <p class="label-card">
+                                        <span class="barra">/</span> 01
+                                    </p>
+                                    <h5>tree shaking LIFO</h5>
+                                    <p>Emoji driver graph DAG injection XML presenter OOP. Edge MIT license val cache SRE parent Stack Overflow CSV coding. Configuration parent gulp JVM emoji resolve.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column small-12 medium-6 large-4">
+                        <div class="flip-card-item flip-card-item__destaque" flip-card-item>
+                            <div class="flip-card-frente" data-interchange="[data/imagens/bg-flipcard.jpg, small]" card-frente>
+                                <div class="frente-interno">
+                                    <p class="label-card">
+                                        <span class="barra">/</span> 02
+                                    </p>
+                                    <h5>tree shaking LIFO</h5>
+                                </div>
+                                <div class="icone-status">
+                                    <i aria-hidden="true" class="icon-index-seta_direita_bold"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-verso" card-verso>
+                                <div class="verso-interno">
+                                    <p class="label-card">
+                                        <span class="barra">/</span> 02
+                                    </p>
+                                    <h5>tree shaking LIFO</h5>
+                                    <p>Emoji driver graph DAG injection XML presenter OOP. Edge MIT license val cache SRE parent Stack Overflow CSV coding. Configuration parent gulp JVM emoji resolve.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column small-12 medium-6 large-4">
+                        <div class="flip-card-item flip-card-item__color" flip-card-item>
+                            <div class="flip-card-frente" data-interchange="[data/imagens/bg-flipcard.jpg, small]" card-frente>
+                                <div class="frente-interno">
+                                    <p class="label-card">
+                                        <span class="barra">/</span> 03
+                                    </p>
+                                    <h5>tree shaking LIFO</h5>
+                                </div>
+                                <div class="icone-status">
+                                    <i aria-hidden="true" class="icon-index-seta_direita_bold"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-verso" card-verso>
+                                <div class="verso-interno">
+                                    <p class="label-card">
+                                        <span class="barra">/</span> 03
+                                    </p>
+                                    <h5>tree shaking LIFO</h5>
+                                    <p>Emoji driver graph DAG injection XML presenter OOP. Edge MIT license val cache SRE parent Stack Overflow CSV coding. Configuration parent gulp JVM emoji resolve.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip card with icon -->
+            <div class="bloco" data-bloco="">
+                <div class="row">
+                    <div class="column">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Flip card with icon
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-center">
+                    <div class="column small-12 medium-6 large-4">
+                        <div class="flip-card-item flip-card-item-icone" flip-card-item>
+                            <div class="flip-card-frente" card-frente>
+                                <div class="frente-interno">
+                                    <div class="wrap-icone">
+                                        <div class="inner-icon">
+                                            <i data-svg="data/icones/icon-bolt.svg"></i>
+                                            <!-- <img src="data/imagens/icone-flipcard.png" alt="" /> -->
+                                        </div>
+                                    </div>
+                                    <h5>serverless Firefox</h5>
+                                </div>
+                                <div class="icone-status">
+                                    <i aria-hidden="true" class="icon-index-seta_direita_bold"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-verso" card-verso>
+                                <div class="verso-interno">
+                                    <h5>serverless Firefox</h5>
+                                    <p>IoT container distributed XML Agile website cherry pick. Bubble sort engineer ICO k S3 legacy code subclass ping TL. API lazy load val ping injection cross-post remote procedure call SRE terminal variable. Linked list rm -rf * reflection subclass greenfield imperative-mood consensus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column small-12 medium-6 large-4">
+                        <div class="flip-card-item flip-card-item-icone destaque" flip-card-item>
+                            <div class="flip-card-frente" card-frente>
+                                <div class="frente-interno">
+                                    <div class="wrap-icone">
+                                        <div class="inner-icon">
+                                            <i class="icon-conteudo-flipcard"></i>
+                                        </div>
+                                    </div>
+                                    <h5>serverless Firefox</h5>
+                                </div>
+                                <div class="icone-status">
+                                    <i aria-hidden="true" class="icon-index-seta_direita_bold"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-verso" card-verso>
+                                <div class="verso-interno">
+                                    <h5>serverless Firefox</h5>
+                                    <p>IoT container distributed XML Agile website cherry pick. Bubble sort engineer ICO k S3 legacy code subclass ping TL. API lazy load val ping injection cross-post remote procedure call SRE terminal variable. Linked list rm -rf * reflection subclass greenfield imperative-mood consensus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column small-12 medium-6 large-4">
+                        <div class="flip-card-item flip-card-item-icone destaque" flip-card-item>
+                            <div class="flip-card-frente" card-frente>
+                                <div class="frente-interno">
+                                    <div class="wrap-icone">
+                                        <div class="inner-icon">
+                                            <i class="icon-conteudo-flipcard"></i>
+                                        </div>
+                                    </div>
+                                    <h5>serverless Firefox</h5>
+                                </div>
+                                <div class="icone-status">
+                                    <i aria-hidden="true" class="icon-index-seta_direita_bold"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-verso" card-verso>
+                                <div class="verso-interno">
+                                    <h5>serverless Firefox</h5>
+                                    <p>IoT container distributed XML Agile website cherry pick. Bubble sort engineer ICO k S3 legacy code subclass ping TL. API lazy load val ping injection cross-post remote procedure call SRE terminal variable. Linked list rm -rf * reflection subclass greenfield imperative-mood consensus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-secao="Accordion">
+            <!-- Accordion -->
+            <div class="bloco" data-bloco="">
+                <div class="row">
+                    <div class="column">
+                        <p class="label-texto">
+                            <span class="barra" aria-hidden="true">/</span> Accordion
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column small-12">
+                        <ul class="accordion" data-accordion data-allow-all-closed="true">
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">bitcoin architecture document object model</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">bitcoin architecture document object model</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">bitcoin architecture document object model</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="column large-6">
+                        <ul class="accordion" data-accordion data-allow-all-closed="true">
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title accordion-title-numero">
+                                    <span class="numero">1</span>
+                                    bitcoin architecture document object model
+                                </a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title accordion-title-numero">
+                                    <span class="numero">2</span>
+                                    bitcoin architecture document object model
+                                </a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title accordion-title-numero">
+                                    <span class="numero">3</span>
+                                    bitcoin architecture document object model
+                                </a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column large-6">
+                        <ul class="accordion" data-accordion data-allow-all-closed="true">
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title accordion-title-icon">
+                                    <i aria-hidden="true" class="icon-conteudo-carrinho"></i>
+                                    bitcoin architecture document object model
+                                </a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title accordion-title-icon">
+                                    <i aria-hidden="true" class="icon-conteudo-carrinho"></i>
+                                    bitcoin architecture document object model
+                                </a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title accordion-title-icon">
+                                    <i aria-hidden="true" class="icon-conteudo-carrinho"></i>
+                                    bitcoin architecture document object model
+                                </a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Gradle internet button frame rate pivot database IRC killer app rebase. IoT directed acyclic graph Ada Lovelace views elixir cowboy coding whiteboard Chrome. Domain specific language injection attributes first in first out view-model lazy. Compilation looks good to me native team-player casting microservices virtual DOM document object model quick sort. Compilation scrum master backend behavior-driven concurrent child architecture free as speech cherry pick compile.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Accordion -->
+        </section> 
+
+        
+    </div>
+
+</body>
+
+</html>

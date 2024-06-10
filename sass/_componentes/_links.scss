@@ -1,0 +1,49 @@
+.link{
+    word-break: break-all;
+    
+    // Tokens
+    color: $color-semantic-info-normal;
+    background-color: rgba($color-semantic-info-light , $opacity-level-medium);
+    
+    text-decoration: none;
+
+    &[target="_blank"]{
+        background-color: transparent;
+    }
+
+    &:hover{
+        color: $color-semantic-info-normal;
+        text-decoration: underline;
+    }
+
+    &:active,
+    &:visited{
+        // Tokens
+        color: $color-semantic-info-dark;
+    }
+
+    &:focus-visible{
+        position: relative;
+        display: inline-block;
+        outline: none;
+
+        &::after {
+            display: block;
+            content: " ";
+            position: absolute;
+            
+            // Tokens
+            width: calc(100% + (2 * #{$spacing-quark}));
+            height: calc(100% + (2 * #{$spacing-quark}));
+            left: -$spacing-quark;
+            top: -$spacing-quark;
+            border-radius: $border-radius-xs;
+            border: solid $border-width-xs $color-focus;
+        }
+    }
+
+    [data-svg]{
+        display: inline;
+        margin-left: $spacing-nano;
+    }
+}

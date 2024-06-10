@@ -1,0 +1,123 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    // Tokens
+    font-family: $font-family-display;
+    font-weight: $font-weight-500;
+    color: $color-title-default;
+    margin-bottom: 0px;
+
+    &:only-child,
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .font-family-dyslexia &{
+        font-family: $font-family-display-accessible;
+    }
+
+    + * {
+        margin-top: $spacing-xs;
+    }
+}
+
+h1{
+    // Tokens
+    font-size: $font-size-big;
+    line-height: $line-height-xs;
+    letter-spacing: $tracking-xxxs;
+}
+
+h2{
+    // Tokens
+    font-size: $font-size-xxxl;
+    line-height: $line-height-sm;
+    letter-spacing: $tracking-xxxs;
+}
+
+h3{
+    // Tokens
+    font-size: $font-size-xxl;
+    line-height: $line-height-sm;
+    letter-spacing: $tracking-xxxs;
+}
+
+h4{
+    // Tokens
+    font-size: $font-size-xl;
+    line-height: $line-height-sm;
+    letter-spacing: $tracking-xxs;
+}
+
+h5{
+    // Tokens
+    font-size: $font-size-lg;
+    line-height: $line-height-sm;
+    letter-spacing: $tracking-default;
+
+    * > {
+        margin-bottom: $spacing-xs;
+    }
+}
+
+h6{
+    // Tokens
+    font-size: $font-size-md;
+    line-height: $line-height-sm;
+    letter-spacing: $tracking-default;
+}
+
+.texto-destaque{
+    // Tokens
+    font-size: $font-size-md;
+    line-height: $line-height-lg;
+    letter-spacing: $tracking-default;
+}
+
+.numero-destaque{
+    // Tokens
+    font-family: $font-family-display;
+    font-size: $font-size-big;
+    line-height: $line-height-md;
+    letter-spacing: $tracking-xxxs;
+
+    + *{
+        margin-top: $spacing-xxxs;
+    }
+}
+
+// Classe utilizada apenas para identificar os componentes
+.label-texto{
+    // Tokens
+    font-size: $font-size-xxxs;
+    line-height: $line-height-xxs;
+    font-weight: $font-weight-700;
+    margin-bottom: $spacing-xxs;
+    
+    text-transform: uppercase;
+
+    [data-tamanho-fonte="1"] &{
+        // Tokens
+        font-size: $font-size-sm;
+    }
+    
+    [data-tamanho-fonte="2"] &{
+        // Tokens
+        font-size: $font-size-md;
+    }
+
+    .barra{
+        // Tokens
+        margin-right: $spacing-quark;
+    }
+}
+
+p {
+	~ p{
+        margin-top: $spacing-xs;
+    }
+}

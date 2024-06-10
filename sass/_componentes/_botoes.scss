@@ -1,0 +1,236 @@
+.btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .3s;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    // Tokens - Shape
+    background-color: $color-neutral-100;
+    border-radius: $border-radius-pill;
+    
+    // Tokens - Spacing
+    padding: $spacing-xxxs $spacing-xs;
+    gap: $spacing-nano;
+
+    // Tokens - Text
+    font-family: $font-family-base;
+    font-weight: $font-weight-500;
+    font-size: $font-size-xs;
+    color: $color-neutral-00;
+    letter-spacing: $tracking-xxs;
+    
+    //caso exista um tema ativo
+    [class*=tema] &{
+        &:not(.btn__circle) {
+            border-radius: var(--border-radius-botao);
+        }
+    }
+    
+    .font-family-dyslexia &{
+        font-family: $font-family-base-accessible;
+    }
+
+    // Hover
+    &:enabled{
+        cursor: pointer;
+
+        &:hover{
+            // Tokens - Shape
+            background-color: $color-brand-01-normal;
+
+            // Tokens - Text
+            color: $color-neutral-100;
+        }
+    }
+
+    // Disabled
+    &:disabled{
+        // Tokens - Shape
+        background-color: $color-neutral-10;
+
+        // Tokens - Text
+        color: $color-neutral-30;
+    }
+
+    &--secondary{
+        // Tokens - Shape
+        border: 2px solid $color-neutral-100;
+        background-color: $color-neutral-05;
+
+        // Tokens - Text
+        color: $color-neutral-100;
+
+        &:enabled{
+            &:hover {
+                // Tokens - Shape
+                background-color: $color-brand-01-lightest;
+            }
+        }
+        
+        &:disabled{
+            // Tokens - Text
+            border-color: $color-neutral-30;
+            background-color: $color-neutral-05;
+
+            // Tokens - Text
+            color: $color-neutral-30;
+        }
+    }
+}
+
+.btn__circle{
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    z-index: 5;
+    transition: .25s;
+
+    // Tokens - Shape
+    border-radius: $border-radius-circular;    
+    background-color: $color-brand-01-normal;
+    width: 48px;
+    height: 48px;
+
+    // Tokens - Icon
+    font-size: $font-size-md;
+    color: $color-brand-05-darkest;
+
+    [data-svg]{
+        svg{
+            position: relative;
+            left: 0;
+        }
+    }
+
+    // Border icon circle
+    &:after{
+        display: block;
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        transition: .3s;
+        
+        // Tokens
+        border-radius: $border-radius-circular;
+        border: 2px solid $color-brand-01-normal;
+    }
+
+    .number{
+        font-size: $font-size-xs;
+        color: $color-brand-01-darkest;
+    }
+
+    &--border-dotted{
+        &:after{
+            border-style: dotted;
+        }
+    }
+
+    &--no-border{
+        &:after{
+            display: none;
+        }
+    }
+    
+
+    &:enabled{
+        &:hover {
+            // Tokens - Shape
+            box-shadow: 0 0 0 4px rgba($color-brand-01-normal, 1);
+
+            &::after{
+                width: calc(100% + 20px);
+                height: calc(100% + 20px);
+                top: -10px;
+                left: -10px;
+            }            
+        }
+    }
+
+    // Disabled
+    &:disabled{
+        &:after{
+            // Tokens
+            border-color: $color-neutral-30;
+        }
+    }
+
+    &--secondary{
+        // Tokens
+        background-color: transparent;
+        color: $color-neutral-50;
+        border: none;
+
+        &:after{ 
+            border-color: $color-neutral-50;
+        }
+        
+        &:enabled{
+            &:hover {
+                // Tokens
+                background-color: $color-neutral-05;
+                color: $color-neutral-50;
+                
+                border: none;
+                box-shadow: none;
+            }
+        }
+        
+        &:disabled{
+            background-color: transparent;
+        }
+    }
+
+    &--alternative{
+        background-color: $color-neutral-100;
+        color: $color-neutral-00;
+
+        &:enabled{
+            &:hover {
+                color: $color-neutral-00;
+                box-shadow: 0 0 0 4px rgba($color-neutral-100, 1);
+                background-color: $color-neutral-100;
+            }
+        }
+    }
+}
+
+.btn--animation-slide{
+    &:enabled{
+        &:hover {
+            [data-svg]{
+                svg{
+                    animation: icon-animation-slide .2s;
+                }
+            }
+        }
+    }
+}
+
+.btn--animation-spin{
+    &:enabled{
+
+        [data-svg]{
+            svg{
+                transform: rotate(0deg);
+                transition: transform ease-in-out .3s;
+            }
+        }
+
+        &:hover {
+            [data-svg]{
+                svg{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+// mixin shadow
+@mixin shadow ( $level, $color: $color-black, $opacity: $opacity-level-lightest){
+    @if $level == "1"{
+        box-shadow: 0px 4px 8px rgba($color, $opacity);
+    } @else if $level == "2"{
+        box-shadow: 0px 8px 16px rgba($color, $opacity);
+    } @else if $level == "3"{
+        box-shadow: 0px 16px 32px rgba($color, $opacity);
+    } @else if $level == "4"{
+        box-shadow: 0px 16px 48px rgba($color, $opacity);
+    } @else{
+        box-shadow: 0px 4px 8px rgba($color, $opacity);
+    }
+}
+
+/*Gradiente*/
+@mixin setGradient($initialColor, $finalColor, $direction: "horizontal") {
+    @if $direction == "horizontal" {
+        background: $initialColor;
+        background: -moz-linear-gradient(left, $initialColor 0%, $finalColor 100%);
+        background: -webkit-linear-gradient(left, $initialColor 0%,$finalColor 100%);
+        background: -webkit-gradient(linear, left top, right top, from($initialColor),to($finalColor));
+        background: linear-gradient(to right, $initialColor 0%,$finalColor 100%);
+    } @else
+    if ($direction == "vertical") {
+        background: $initialColor;
+        background: -moz-linear-gradient(top, $initialColor 0%, $finalColor 100%);
+        background: -webkit-linear-gradient(top, $initialColor 0%,$finalColor 100%);
+        background: -webkit-gradient(linear, left top, left bottom, from($initialColor),to($finalColor));
+        background: linear-gradient(to bottom, $initialColor 0%,$finalColor 100%);
+    } @else
+    if ($direction == "diagonalLeftToRightDown") {
+        background: $initialColor;
+        background: -moz-linear-gradient(-45deg, $initialColor 0%, $finalColor 100%);
+        background: -webkit-linear-gradient(-45deg, $initialColor 0%, $finalColor 100%);
+        background: linear-gradient(135deg, $initialColor 0%, $finalColor 100%);
+    } @else
+    if ($direction == "diagonalLeftToRightUp") {
+        background: $initialColor;
+        background: -moz-linear-gradient(45deg, $initialColor 0%, $finalColor 100%);
+        background: -webkit-linear-gradient(45deg, $initialColor 0%,$finalColor 100%);
+        background: linear-gradient(45deg, $initialColor 0%,$finalColor 100%);
+    } @else
+    if ($direction == "radial") {
+        background: $initialColor;
+        background: -moz-radial-gradient(center, ellipse cover, $initialColor 0%, $finalColor 100%);
+        background: -webkit-radial-gradient(center, ellipse cover, $initialColor 0%, $finalColor 100%);
+        background: radial-gradient(ellipse at center, $initialColor 0%, $finalColor 100%);
+    }
+}
+
+@mixin fontSize($tamanhoFonte) {
+    $proporcaoFonteMobile: .7;
+    $proporcaoFonteTablet: $proporcaoFonteMobile + ((1 - $proporcaoFonteMobile) / 2);
+
+    $fontSizeDesktop: $fontSizePadrao * ($tamanhoFonte / $fontSizePadrao);
+    $fontSizeTablet: $fontSizeDesktop * $proporcaoFonteTablet;
+    $fontSizeMobile: $fontSizeDesktop * $proporcaoFonteMobile;
+
+    @if($fontSizeMobile >= $fontSizePadrao) {
+        font-size: $fontSizeMobile;
+    } @else {
+        font-size: $fontSizePadrao;
+    }
+
+    @include medium-only {
+        @if($fontSizeTablet >= $fontSizePadrao) {
+            font-size: $fontSizeTablet;
+        } @else {
+            font-size: $fontSizePadrao;
+        }
+    }
+
+    @include large-up {
+        font-size: $fontSizeDesktop;
+    }
+}

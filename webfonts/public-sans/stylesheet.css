@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Black'), local('PublicSans-Black'),
+        url('PublicSans-Black.woff2') format('woff2'),
+        url('PublicSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Bold Italic'), local('PublicSans-BoldItalic'),
+        url('PublicSans-BoldItalic.woff2') format('woff2'),
+        url('PublicSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Bold'), local('PublicSans-Bold'),
+        url('PublicSans-Bold.woff2') format('woff2'),
+        url('PublicSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Black Italic'), local('PublicSans-BlackItalic'),
+        url('PublicSans-BlackItalic.woff2') format('woff2'),
+        url('PublicSans-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans ExtraBold'), local('PublicSans-ExtraBold'),
+        url('PublicSans-ExtraBold.woff2') format('woff2'),
+        url('PublicSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans ExtraBold Italic'), local('PublicSans-ExtraBoldItalic'),
+        url('PublicSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('PublicSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans ExtraLight Italic'), local('PublicSans-ExtraLightItalic'),
+        url('PublicSans-ExtraLightItalic.woff2') format('woff2'),
+        url('PublicSans-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans ExtraLight'), local('PublicSans-ExtraLight'),
+        url('PublicSans-ExtraLight.woff2') format('woff2'),
+        url('PublicSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Medium'), local('PublicSans-Medium'),
+        url('PublicSans-Medium.woff2') format('woff2'),
+        url('PublicSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Regular'), local('PublicSans-Regular'),
+        url('PublicSans-Regular.woff2') format('woff2'),
+        url('PublicSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans SemiBold'), local('PublicSans-SemiBold'),
+        url('PublicSans-SemiBold.woff2') format('woff2'),
+        url('PublicSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Italic'), local('PublicSans-Italic'),
+        url('PublicSans-Italic.woff2') format('woff2'),
+        url('PublicSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Light'), local('PublicSans-Light'),
+        url('PublicSans-Light.woff2') format('woff2'),
+        url('PublicSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Medium Italic'), local('PublicSans-MediumItalic'),
+        url('PublicSans-MediumItalic.woff2') format('woff2'),
+        url('PublicSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Light Italic'), local('PublicSans-LightItalic'),
+        url('PublicSans-LightItalic.woff2') format('woff2'),
+        url('PublicSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Thin'), local('PublicSans-Thin'),
+        url('PublicSans-Thin.woff2') format('woff2'),
+        url('PublicSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans Thin Italic'), local('PublicSans-ThinItalic'),
+        url('PublicSans-ThinItalic.woff2') format('woff2'),
+        url('PublicSans-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans SemiBold Italic'), local('PublicSans-SemiBoldItalic'),
+        url('PublicSans-SemiBoldItalic.woff2') format('woff2'),
+        url('PublicSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+

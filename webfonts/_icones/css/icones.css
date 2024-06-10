@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'icones';
+  src: url('../font/icones.eot?48790784');
+  src: url('../font/icones.eot?48790784#iefix') format('embedded-opentype'),
+       url('../font/icones.woff2?48790784') format('woff2'),
+       url('../font/icones.woff?48790784') format('woff'),
+       url('../font/icones.ttf?48790784') format('truetype'),
+       url('../font/icones.svg?48790784#icones') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icones';
+    src: url('../font/icones.svg?48790784#icones') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icones";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-cadeado:before { content: '\e800'; } /* '' */
+.icon-casa:before { content: '\e801'; } /* '' */
+.icon-exclamacao:before { content: '\e802'; } /* '' */
+.icon-interrogacao:before { content: '\e803'; } /* '' */
+.icon-letras:before { content: '\e804'; } /* '' */
+.icon-livro:before { content: '\e805'; } /* '' */
+.icon-mais:before { content: '\e806'; } /* '' */
+.icon-menos:before { content: '\e807'; } /* '' */
+.icon-microfone:before { content: '\e808'; } /* '' */
+.icon-mouse:before { content: '\e809'; } /* '' */
+.icon-pause:before { content: '\e80a'; } /* '' */
+.icon-play:before { content: '\e80b'; } /* '' */
+.icon-brilho:before { content: '\e80c'; } /* '' */
+.icon-seta_01:before { content: '\e80d'; } /* '' */
+.icon-seta_02:before { content: '\e80e'; } /* '' */
+.icon-seta_03:before { content: '\e80f'; } /* '' */
+.icon-seta_04:before { content: '\e810'; } /* '' */
+.icon-seta-grossa_01:before { content: '\e811'; } /* '' */
+.icon-seta-grossa_02:before { content: '\e812'; } /* '' */
+.icon-seta-grossa_03:before { content: '\e813'; } /* '' */
+.icon-seta-grossa_04:before { content: '\e814'; } /* '' */
+.icon-xis:before { content: '\e815'; } /* '' */
+.icon-ok:before { content: '\e816'; } /* '' */
+.icon-raio:before { content: '\e81a'; } /* '' */
+.icon-check:before { content: '\e81b'; } /* '' */
+.icon-contraste:before { content: '\e81c'; } /* '' */
+.icon-fechar:before { content: '\e81d'; } /* '' */
+.icon-fonte:before { content: '\e81e'; } /* '' */
+.icon-dyslexia:before { content: '\e81f'; } /* '' */
+.icon-icon-lock:before { content: '\e820'; } /* '' */
+.icon-escudo:before { content: '\e821'; } /* '' */
+.icon-alvo:before { content: '\e822'; } /* '' */
+.icon-lua:before { content: '\e823'; } /* '' */
+.icon-mais_2:before { content: '\e824'; } /* '' */
+.icon-play-menu:before { content: '\e825'; } /* '' */
+.icon-negativo:before { content: '\e826'; } /* '' */
+.icon-positivo:before { content: '\e827'; } /* '' */
+.icon-fechar-aspas:before { content: '\e828'; } /* '' */
+.icon-abrir-aspas:before { content: '\e829'; } /* '' */
+.icon-check-alternativa:before { content: '\e82a'; } /* '' */
+.icon-icon-external-link:before { content: '\e82b'; } /* '' */
+.icon-modal:before { content: '\e82c'; } /* '' */
+.icon-flipcard:before { content: '\e82d'; } /* '' */
+.icon-acessibilidade:before { content: '\e905'; } /* '' */
+.icon-inicio:before { content: '\e906'; } /* '' */
+.icon-topicos:before { content: '\e907'; } /* '' */

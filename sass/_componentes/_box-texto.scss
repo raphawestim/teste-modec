@@ -1,0 +1,48 @@
+.box-destaque {
+    background-color: #ec0000;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include large-up {
+        padding: 45px 80px;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 60px;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.texto-linha {
+    position: relative;
+    margin-top: 16px;
+    
+    [class*="titulo"]{
+        padding-bottom: 16px;
+        border-bottom: 2px solid rgba($color-neutral-50, .2);
+    }
+
+    &.vermelha {
+        [class*="titulo"]{
+            border-color: $color-brand-01-normal;
+        }
+    }
+}
+
+.img-detalhe-inferior{
+	padding-bottom: 5px;
+	border-bottom: 4px solid $color-brand-01-normal;
+}
+
+.box-img-texto{
+    [class*="titulo"]{
+        margin-bottom: 8px;
+    }
+
+    img{
+        margin-bottom: 32px;
+    }
+}

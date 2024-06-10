@@ -1,0 +1,89 @@
+.infografico-clique {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    .pontos-interacao {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ponto {
+        position: absolute;
+
+        @include setGradient(#feb921, #e09b03, "vertical");
+        border: 0;
+        border-radius: 100%;
+        box-shadow: 0 4px 5px 0 rgba(#000, .3),
+            0 0 0 5px rgba(#fff, .35);
+        text-shadow: 2px -2px 3px rgba(#000, .4);
+        width: 37px;
+        height: 37px;
+        line-height: 37px;
+        padding: 0;
+        font-size: 14px;
+        font-family: $font-icones-index;
+        text-align: center;
+        color: #fff;
+
+        &:hover {
+            @include setGradient(#423e53, #27233b, "vertical");
+        }
+
+        &::before {
+            content: "\0e826";
+            font-family: $font-icones-index;
+            display: inline-block;
+            transform: rotate(45deg);
+            transform-origin: center;
+        }
+
+        // &.visitado {
+        //     &::before {
+        //         content: "\0ee51";
+        //     }
+        // }
+
+        &.destaque {
+            -webkit-animation: pulsate 1.5s ease-out;
+            -webkit-animation-iteration-count: infinite;
+            animation: pulsate 1.5s ease-out;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+// largura, altura, posição dos pontos
+$dadosInfo: (835px, 400px, ((228px, 219px), (462px, 97px), (466px, 344px), (488px, 219px), (729px, 219px))),
+            (663px, 684px, ((128px,260px), (321px,117px), (518px,260px), (518px,496px), (321px,606px), (128px,496px))),
+            (795px, 785px, ((355px, 146px), (321px,117px)));
+
+$contadorInfografico: 0;
+@each $infografico in $dadosInfo {
+    $contadorInfografico: $contadorInfografico + 1;
+    $contadorPontos: 0;
+
+    $larguraInfo: nth($infografico, 1);
+    $alturaInfo: nth($infografico, 2);
+    $pontos: nth($infografico, 3);
+
+    .infografico-#{$contadorInfografico} {
+        max-width: $larguraInfo;
+
+        .ponto {
+            @each $ponto in $pontos {
+                $contadorPontos: $contadorPontos + 1;
+                $posX: nth($ponto, 1);
+                $posY: nth($ponto, 2);
+                
+                &-#{$contadorPontos} {
+                    left: percentage($posX/$larguraInfo);
+                    top: percentage($posY/$alturaInfo);
+                }
+            }
+        }
+    }
+}

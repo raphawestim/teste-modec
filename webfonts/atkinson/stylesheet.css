@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Atkinson';
+    src: url('Atkinson-Hyperlegible-Regular-102.eot');
+    src: local('Atkinson'), local('Atkinson-Hyperlegible-Regular-102'),
+        url('Atkinson-Hyperlegible-Regular-102.eot?#iefix') format('embedded-opentype'),
+        url('Atkinson-Hyperlegible-Regular-102.woff2') format('woff2'),
+        url('Atkinson-Hyperlegible-Regular-102.woff') format('woff'),
+        url('Atkinson-Hyperlegible-Regular-102.ttf') format('truetype'),
+        url('Atkinson-Hyperlegible-Regular-102.svg#Atkinson-Hyperlegible-Regular-102') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson';
+    src: url('Atkinson-Hyperlegible-Bold-102.eot');
+    src: local('Atkinson'), local('Atkinson-Hyperlegible-Bold-102'),
+        url('Atkinson-Hyperlegible-Bold-102.eot?#iefix') format('embedded-opentype'),
+        url('Atkinson-Hyperlegible-Bold-102.woff2') format('woff2'),
+        url('Atkinson-Hyperlegible-Bold-102.woff') format('woff'),
+        url('Atkinson-Hyperlegible-Bold-102.ttf') format('truetype'),
+        url('Atkinson-Hyperlegible-Bold-102.svg#Atkinson-Hyperlegible-Bold-102') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

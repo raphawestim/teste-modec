@@ -1,0 +1,11 @@
+.console {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: $color-semantic-warning-normal;
+    color: $color-neutral-100;
+    font-weight: 700;
+    font-size: $font-size-xs;
+    z-index: 100;
+}

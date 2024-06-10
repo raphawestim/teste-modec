@@ -1,0 +1,33 @@
+.shape-icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // tokens
+    background-color: $color-brand-01-light;
+    border-radius: $border-radius-circular;
+
+    .inner-icon{
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        i{
+            font-size: 48px;
+        }
+    }
+}
+
+[data-svg]{
+    display: flex;
+    align-items: center;
+    
+    path, rect{
+        fill: currentColor;
+    }
+}

@@ -1,0 +1,35 @@
+:root{
+    --border-radius: #{$border-radius-none};
+    --border-radius-botao: #{$border-radius-none};
+    --border-radius-alternativa: #{$border-radius-none};
+    --border-radius-img: #{$border-radius-none};
+    --border-radius-video: #{$border-radius-none};
+    --border-radius-card-circle: #{$border-radius-none};
+}
+.tema-1{
+    --border-radius: #{$border-radius-none};
+    --border-radius-botao: #{$border-radius-none};
+    --border-radius-alternativa: #{$border-radius-none};
+    --border-radius-img: #{$border-radius-none};
+    --border-radius-video: #{$border-radius-none};
+    --border-radius-video-button: #{$border-radius-none};
+    --border-radius-card-circle: #{$border-radius-none};
+}
+.tema-2{
+    --border-radius: #{$border-radius-md};
+    --border-radius-botao: #{$border-radius-md};
+    --border-radius-alternativa: #{$border-radius-sm};
+    --border-radius-img: #{$border-radius-sm};
+    --border-radius-video: #{$border-radius-sm};
+    --border-radius-video-button: #{$border-radius-sm};
+    --border-radius-card-circle: #{$border-radius-sm};
+}
+.tema-3{
+    --border-radius: #{$border-radius-xl};
+    --border-radius-botao: #{$border-radius-pill};
+    --border-radius-alternativa: #{$border-radius-pill};
+    --border-radius-img: #{$border-radius-md};
+    --border-radius-video: #{$border-radius-md};
+    --border-radius-video-button: #{$border-radius-md};
+    --border-radius-card-circle: #{$border-radius-md};
+}

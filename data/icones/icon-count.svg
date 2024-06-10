@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_2662" data-name="Retângulo 2662" width="12" height="12" transform="translate(907.091 735)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_57" data-name="Grupo de máscara 57" transform="translate(-907.091 -735)" clip-path="url(#clip-path)">
+    <g id="Grupo_14434" data-name="Grupo 14434" transform="translate(900.182 730.031)">
+      <path id="Caminho_16905" data-name="Caminho 16905" d="M13.6,13.829,0,0" transform="translate(0 8.602)" fill="none" stroke="#00ffcb" stroke-width="1"/>
+      <path id="Caminho_16906" data-name="Caminho 16906" d="M13.6,13.829,0,0" transform="translate(3.391 8.602)" fill="none" stroke="#00ffcb" stroke-width="1"/>
+      <path id="Caminho_16907" data-name="Caminho 16907" d="M10.6,10.9-5.808-5.679" transform="translate(9.795 11.53)" fill="none" stroke="#00ffcb" stroke-width="1"/>
+      <path id="Caminho_16908" data-name="Caminho 16908" d="M7.508,7.561l-19.32-19.716" transform="translate(16.281 14.869)" fill="none" stroke="#00ffcb" stroke-width="1"/>
+      <path id="Caminho_16909" data-name="Caminho 16909" d="M5.888,6.341-14.955-14.521" transform="translate(21.776 16.09)" fill="none" stroke="#00ffcb" stroke-width="1"/>
+      <path id="Caminho_16910" data-name="Caminho 16910" d="M8.2,8.539l-18.671-18.8" transform="translate(19.464 10.259)" fill="none" stroke="#00ffcb" stroke-width="1"/>
+      <path id="Caminho_16911" data-name="Caminho 16911" d="M13.6,13.829,0,0" transform="translate(14.065 1.687)" fill="none" stroke="#00ffcb" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

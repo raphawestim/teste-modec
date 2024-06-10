@@ -1,0 +1,63 @@
+/*
+    Font Family
+*/
+$font-family-base: 'Public Sans', Arial, Helvetica, sans-serif;
+$font-family-display: 'Duplet Open', Arial, Helvetica, sans-serif;
+$font-family-decorative: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+
+$font-family-display-accessible: "Atkinson", Arial, Helvetica, sans-serif;
+$font-family-base-accessible: "Atkinson", Arial, Helvetica, sans-serif;
+
+/* 
+    Font Weight
+*/
+// Fonte Light
+$font-weight-300: 300;
+// Fonte Regular
+$font-weight-400: 400;
+// Fonte Medium
+$font-weight-500: 500;
+// Fonte Semibold
+$font-weight-600: 600;
+// Fonte Bold
+$font-weight-700: 700;
+
+/*
+    Font Size
+*/
+$font-size-xxxs:    .75rem;
+$font-size-xxs:     .875rem;
+$font-size-xs:      1rem;
+$font-size-sm:      1.25rem;
+$font-size-md:      1.5rem;
+$font-size-lg:      2rem;
+$font-size-xl:      2.5rem;
+$font-size-xxl:     3rem;
+$font-size-xxxl:    4rem;
+$font-size-big:     5rem;
+$font-size-giant:   10rem;
+
+/*
+    Line Height
+*/
+$line-height-xxs: 1.0;
+$line-height-xs: 1.1;
+$line-height-sm: 1.2;
+$line-height-md: 1.3;
+$line-height-lg: 1.4;
+$line-height-xl: 1.5;
+
+/*
+    Letter Spacing
+	Para converter tracking em rem (tracking / 1000 = rem). 
+*/
+
+$tracking-default: 0;
+$tracking-xxxs:	-0.02rem;
+$tracking-xxs: 	-0.01rem;
+$tracking-xs: 	 0.02rem;
+$tracking-sm:	 0.04rem;
+$tracking-md:	 0.08rem;
+$tracking-lg:	 0.12rem;
+$tracking-xl:	 0.16rem;
+$tracking-xxl:	 0.2rem;

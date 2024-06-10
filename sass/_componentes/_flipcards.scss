@@ -1,0 +1,295 @@
+.cards-wrapper {
+	transform-style: preserve-3d;
+}
+
+.flip-card-item {
+	position: relative;
+	max-width: 350px;
+
+	// Tokens - Image
+	border-radius: $border-radius-xl;
+
+	//caso exista um tema ativo
+    [class*=tema] &{
+        border-radius: var(--border-radius);
+    }
+
+	// Label Flipcard
+	.label-card{
+		// Tokens - 
+		font-weight: $font-weight-400;
+        font-size: $font-size-xxs;
+		color: $color-neutral-00;
+        margin-bottom: $spacing-xxxs;
+
+		.barra{
+			margin-right: 3px;
+
+			// Tokens - 
+			color: $color-brand-01-normal;
+		}
+    }
+
+	// Titulo Card
+	h5{
+		// Tokens
+		font-weight: $font-weight-500;
+		color: $color-neutral-00;
+		margin-bottom: $spacing-xxs;
+	}
+	
+	// Flipcard Frente
+	.flip-card-frente{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		// Tokens
+		font-family: $font-family-display;
+		padding: $spacing-xxxs;
+
+		.frente-interno{
+			// Tokens
+			padding: 0 $spacing-xxxs;
+		}
+
+		.icone-status{
+			// Tokens - 
+			background-color: $color-brand-01-normal;
+			border-radius: $border-radius-pill;
+			padding-right: $spacing-nano;
+
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			width: 100%;
+			height: 48px;
+
+			i{
+				font-size: 24px;
+				color: $color-brand-05-darkest;
+			}
+		}
+	}
+	
+	// Flipcard Verso
+	.flip-card-verso{
+		// Tokens
+		background-color: $color-neutral-00;
+		color: $color-brand-05-darkest;
+
+		.no-csstransforms3d & {
+			display: none;
+		}
+
+		.verso-interno{
+			// Tokens
+			padding: $spacing-sm;
+
+			height: 100%;
+
+			&:after{
+				display: block;
+				content: '';
+				position: absolute;
+
+				// Tokens
+				bottom: $spacing-sm;
+				left: $spacing-sm;
+				width: calc(100% - (2 * #{$spacing-sm}));
+				height: 4px;
+				border-radius: $border-radius-sm;
+				background-color: $color-brand-01-dark;
+			}
+
+			.label-card{
+				// Tokens
+				color: $color-brand-05-darkest;
+				margin: $spacing-sm 0 $spacing-xxs;
+			}
+	
+			h5{
+				// Tokens
+				color: $color-brand-05-darkest;
+			}
+
+			& > :last-child{
+				// Tokens
+				margin-bottom: $spacing-sm;
+			}
+		}
+	}
+
+	.flip-card-frente,
+	.flip-card-verso {
+		// Tokens
+		border-radius: $border-radius-xl;
+		@include shadow($shadow-level-4, $color-neutral-20, 1);
+
+		//caso exista um tema ativo
+		[class*=tema] &{
+			border-radius: var(--border-radius);
+		}
+		
+		position: absolute;
+		width: 100%;
+		cursor: pointer;
+		-webkit-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		.frente-interno,
+		.verso-interno {
+			width: 100%;
+			position: relative;
+		}
+	}
+
+	// Flipcard clicado
+	// &.seen {}
+
+	&__destaque{
+		.flip-card-verso{
+			// Tokens
+			background-color: $color-brand-05-darkest;
+			color: $color-neutral-00;
+			
+			.verso-interno{
+				.label-card{
+					// Tokens
+					color: $color-brand-01-normal;
+				}
+
+				h5{
+					// Tokens
+					color: $color-neutral-00;
+				}
+			}
+		}
+	}
+	
+	&__color{
+		.flip-card-verso{
+			// Tokens
+			background-color: $color-brand-01-normal;
+			color: $color-brand-05-darkest;
+
+			.verso-interno{
+				&:after{
+					// Tokens
+					background-color: $color-brand-05-darkest;
+				}
+
+				.label-card{
+					// Tokens
+					color: $color-brand-05-darkest;
+
+					.barra{
+						// Tokens
+						color: $color-brand-05-darkest;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Flipcard Icon
+.flip-card-item{
+	&-icone {
+		min-height: 470px;
+
+		.flip-card-frente{
+			// Tokens
+			padding: $spacing-sm;
+
+			display: block;
+
+			.frente-interno{
+				padding: 0;
+				text-align: center;
+
+				.wrap-icone{
+					// Tokens
+					width: 200px;
+					height: 200px;
+					margin: $spacing-xxs auto $spacing-sm;
+					border-radius: $border-radius-circular;
+					background-color: $color-brand-01-lightest;
+					
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.inner-icon{
+						width: 120px;
+						height: 120px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						overflow: hidden;
+
+						i{
+							font-size: 110px;
+							color: $color-brand-01-dark;
+						}
+					}
+				}
+				
+				h5{
+					// Tokens
+					color: $color-brand-05-darkest;
+					margin-bottom: $spacing-sm;
+				}
+			}
+
+			.icone-status{
+				width: 48px;
+				justify-content: center;
+				padding: 0;
+				margin: 0 auto;
+			}
+		}
+
+		.flip-card-verso{
+			.verso-interno{
+				h5{
+					// Tokens
+					margin-top: $spacing-sm;
+				}
+			}
+		}
+
+		&.destaque{
+			.flip-card-frente{
+				// Tokens
+				background-color: $color-brand-05-darkest;
+
+				.wrap-icone{
+					// Tokens
+					background-color: rgba($color-brand-01-normal, $opacity-level-lightest);
+				}
+
+				.frente-interno{
+					h5{
+						// Tokens
+						color: $color-neutral-00;
+					}
+				}
+			}
+
+			.flip-card-verso{
+				// Tokens
+				background-color: $color-brand-05-dark;
+				color: $color-neutral-00;
+
+				h5{
+					// Tokens
+					color: $color-neutral-00;
+				}
+			}
+		}
+	}
+}

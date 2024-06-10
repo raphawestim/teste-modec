@@ -1,0 +1,117 @@
+.exercicio-vf {
+    .lista-questoes {
+        .questao {
+            display: table;
+            width: 100%;
+            position: relative;
+             @include small-only {
+                padding-bottom: 54px;
+            }
+
+            ~ .questao {
+                margin-top: 45px;
+            }
+
+            .texto-questao {
+                display: table-cell;
+                vertical-align: middle;
+                font-family: $font-family-base;
+                font-size: $fontSizePadrao;
+                text-align: left;
+                color: #39190d;
+
+                .font-family-dyslexia &{
+                    font-family: $font-family-base-accessible!important;
+                }
+            }
+
+            .alternativas {
+                display: table-cell;
+                vertical-align: middle;
+                width: 85px;
+                 @include small-only {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .alternativa {
+                position: relative;
+                font-family: $font-family-base;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0;
+                -webkit-transition: .3s;
+                transition: .3s;
+
+                .font-family-dyslexia &{
+                    font-family: $font-family-base-accessible!important;
+                }
+
+                ~ .alternativa {
+                    margin-left: 5px;
+                }
+
+                &.ui-checkboxradio-label {
+                    background: #cc5214;
+                    color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0;
+                    border: 0;
+                    border-radius: 100%;
+
+                    &.ui-state-active {
+                        background: #f58025;
+                    }
+
+                    &.ui-state-disabled {
+                        opacity: 1;
+                    }
+                }
+
+                &.ui-visual-focus {
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+
+                &::before {
+                    content: "";
+                    display: none;
+                    font-family: $font-icones-index;
+                    font-size: 28px;
+                    text-align: center;
+                    width: 26px;
+                    height: 26px;
+                    position: absolute;
+                    top: calc(50% - 42px);
+                    left: 0;
+                    z-index: 2;
+                }
+
+                &.certo {
+                    &::before {
+                        display: block;
+                        content: "\0ee51";
+                        color: $color-semantic-success-normal;
+                    }
+                }
+
+                &.errado {
+                    &::before {
+                        display: block;
+                        content: "\0ee53";
+                        color: $color-semantic-danger-normal;
+                    }
+                }
+
+                &.selecionado {}
+            }
+        }
+    }
+}

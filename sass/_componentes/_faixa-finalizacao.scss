@@ -1,0 +1,48 @@
+.faixa-finalizacao{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-brand-05-darkest;
+    color: $color-neutral-00;
+    padding: $spacing-xxxs;
+    z-index: 99;
+
+    &.mensagem-atualizada{
+        display: block;
+        background-color: $color-brand-05-lightest;
+        color: $color-brand-05-darkest;
+
+        .wrap-faixa{
+            .curso-finalizado{
+                display: block;
+            }
+        }
+    }
+
+    .wrap-faixa{
+
+        .mensagem-finalizacao,
+        .curso-finalizado{
+            display: none;
+        }
+
+        .mensagem-finalizacao{
+            text-align: center;
+
+            .wrap-texto{
+                p:last-child{
+                    margin-bottom: $spacing-xxxs;
+                }
+            }
+        }
+
+        .curso-finalizado{
+            text-align: center;
+            p:last-child{
+                margin-bottom: 0;
+            }
+        }
+    } 
+}

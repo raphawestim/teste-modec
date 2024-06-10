@@ -1,0 +1,547 @@
+.alto-contraste{
+    // Titulos
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        color: #fff;
+    }
+    
+    .link{
+        color: #ff0;
+    }
+
+    // Estrutura Pagina    
+    .instrucao-navegacao {
+        .instrucao-navegacao-conteudo {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #ff0;
+
+            &::after {
+                border-bottom-color: #fff;
+            }
+        }
+    }
+
+    .bloco-podcast {
+        .bloco-podcast-imagem {
+            &::before {
+                background-color: rgba(#000, .66);
+            }
+        }
+    }
+
+
+    // Estrutura
+    .logo{
+        color: #fff;
+    }
+
+    .cabecalho {
+        background-color: $color-black;
+    }
+
+    .curso-nav {
+        .grupo-topo {
+            color: #ff0;
+        }
+
+        .grupo-base {
+            color: #fff;
+        }
+    }
+
+    &.limite-externo {
+        background-color: $color-black;
+        color: #fff;
+    }
+
+    blockquote{
+        color: #fff;
+    }
+
+
+    // Accordion
+    .accordion {
+        .accordion-item {
+            background-color: transparent;
+            border: 2px solid #ff0;
+
+            &::before {
+                background-color: #fff;
+            }
+
+            &.is-active{
+                .accordion-title {
+                    background-color: #000;
+                }
+
+            }
+        }
+
+        .accordion-content {
+            color: #fff;
+            background-color: #000;
+        }
+        
+        .accordion-title {
+            background-color: #000;
+            color: #ff0;
+            
+            i,.numero{
+                color: #ff0;
+            }
+            
+            &:before{
+                color: #ff0;
+            }
+            
+            &:hover{
+                background-color: #000;
+            }
+        }
+    }
+
+
+    //Buttons
+    .btn:enabled {
+        background-color: #ff0;
+        color: $color-black;
+    }
+    
+    .btn{
+        &__circle{
+            
+            &:after{
+                border-color: #ff0;
+            }
+
+            &:hover{
+                box-shadow: 0 0 0 4px rgba(#ff0, 1);
+            }
+        }
+    }
+    
+    
+    // Box texto
+    .box-destaque {
+        background-color: transparent;
+        border: 2px solid #ff0;
+        color: #ff0;
+    }
+
+    .texto-linha {
+        border-color: #fff;
+    }
+
+    .texto-destaque {
+        &::before,
+        &::after {
+            background-color: #fff;
+        }
+    }
+
+
+    // Card
+    .card {
+        background-color: $color-black;
+        border: 2px solid #fff;
+
+        h5 {
+            color: #ff0;
+        }
+
+        &.imagem,
+        &.icone {
+            &::before {
+                background-color: #fff;
+            }
+        }
+
+        &.imagem {
+            .card-image::after {
+                background-color: $color-black;
+            }
+        }
+
+        &.ilustrado {
+            .titulo-card {
+                color: #fff;
+            }
+        }
+    }
+
+    
+    // Flipcard
+	.flip-card-item {
+		.flip-card-frente, .flip-card-verso {
+			background-color: transparent;
+			border: 2px solid #fff;
+
+			&::before {
+				background-color: #ff0;
+				color: $color-black;
+			}
+		}
+
+		.flip-card-frente::after {
+			background-color: #fff;
+		}
+
+		h5 {
+			color: #ff0;
+		}
+
+		&.imagem .card-image::after {
+			background-color: $color-black;
+		}
+	}
+
+
+    // Lista
+    .lista {
+        li::before {
+            background-color: #fff;
+        }
+    }
+
+    .lista-linha {
+        li {
+            border-color: #fff;
+        }
+    }
+
+    
+    // Midia
+    .bloco-podcast {
+        .jwplayer {
+            .jw-controlbar {
+                .jw-button-color,
+                .jw-button-color:hover {
+                    color: #ff0;
+                }
+            }
+
+            .jw-text {
+                color: #fff;
+            }
+
+            .jw-rail {
+                box-shadow: 0 0 0 2px #ff0;
+                background-color: $color-black;
+            }
+
+            .jw-buffer {
+                background-color: $color-black;
+            }
+
+            .jw-progress {
+                background: #ff0;
+            }
+
+            .jw-icon-playback {
+                border-color: #ff0;
+            }
+        }
+    }
+
+    .midia-wrapper.midia-video .jwplayer.jw-skin-custom .jw-display-icon-display{
+        background-color: #ff0;
+        box-shadow: 0 0 0 $size-shadow-button-play rgba(#ff0, $opacity-level-light);
+
+    }
+
+
+    // Menu
+    .tela-menu {
+
+        .slick-arrow{
+
+            &:hover{
+                background-color: $color-contrast-yellow;
+            }
+
+            &::before{
+                color: $color-contrast-black;
+            }
+        }
+
+        .btn-acessar-licao{
+            background-color: $color-contrast-yellow !important;
+            box-shadow: 0 0 0 12px rgba($color-contrast-yellow, $opacity-level-light) !important;
+
+            &:hover{
+                box-shadow: 0 0 0 16px rgba($color-contrast-yellow, $opacity-level-light) !important;
+            }
+        }
+
+        .tela-menu-conteudo {
+            &::before {
+                background-color: #fff;
+            }
+        }
+    }
+    .menu-suspenso {
+        background-color: $color-black;
+        color: #ff0;
+
+        &::before {
+            border-color: #fff;
+            color: #fff;
+            background-color: $color-black;
+        }
+
+        li {
+            border-color: #fff;
+
+            a {
+                .numero {
+                    color: #ff0;
+                }
+
+                &:hover {
+                    background-color: #ff0;
+                    color: $color-black;
+
+                    .numero {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+    .menu-acessibilidade{
+
+        background-color: $color-contrast-black;
+
+        &__header{
+            background-color: $color-contrast-black;
+
+            .menu-acessibilidade__close-menu-anchor{
+                path{
+                    fill: $color-contrast-yellow;
+                }
+            }
+
+            
+        }
+
+        &__icon{
+            background-color: $color-contrast-black;
+
+            svg{
+                color: $color-contrast-text;
+            }
+        }
+
+        .item__buttons{
+            button{
+                background-color: $color-contrast-yellow;
+                
+                path{
+                    fill: $color-contrast-black;
+                }
+            }
+        }
+
+        .item__input{
+            
+            label{
+
+                &::after {
+                    background-color: $color-contrast-yellow !important;
+                }
+            }
+
+            input:checked + label {
+                background-color: $color-neutral-100;
+            }
+
+        }
+
+        .item__icon{
+            color: $color-contrast-text;
+        }
+    }
+
+
+    // Modal
+    .featherlight {
+        .featherlight-content {
+            border: 2px solid #fff;
+        }
+
+        &:last-of-type{
+            background-color: rgba(#000, .8);
+        }
+    }
+    .modal,
+    .feedback {
+        background-color: $color-black;
+        color: #fff;
+    }
+    .modal .wrap-icone:before, .feedback .wrap-icone:before{
+        background-color: #000;
+    }
+
+
+    // Slider
+	.slider-wrapper.bg-destaque {
+		.content-slider::before {
+			display: none;
+		}
+	}
+
+    .slick-slide .numero-slider{
+        color: #fff;
+    }
+
+	.content-slider {
+		.titulo-slide {
+			color: #ff0;
+		}
+	}
+
+	.slick-dots li.slick-active {
+		background-color: #ff0;
+	}
+
+	.slick-arrow:not(.slick-disabled) {
+		background-color: #ff0;
+		color: $color-black;
+	}
+
+	.slide-numbers {
+		color: #ff0;
+	}
+
+	.slide-cards {
+		.card.texto {
+			.titulo-card {
+				color: #fff;
+			}
+		}
+	}
+
+
+    // Tabela
+    .tabela.linhas thead {
+        th,
+        td {
+        color: $color-contrast-text;
+        }
+    }
+
+
+    // Tabs
+    .tabs {
+        &::after {
+            border-color: #fff;
+        }
+    }
+
+    .tabs-title {
+        a {
+            color: #fff;
+
+            &::after {
+                background-color: #fff;
+            }
+        }
+        &.is-active {
+            a {
+                color: #ff0!important;
+                border-color: #ff0!important;
+                
+                &::after {
+                    background-color: #ff0;
+                }
+                
+                .numero{
+                    color: #ff0!important;
+                }
+            }
+        }
+    }
+    .tabs-content {
+        border-color: #fff;
+        color: #fff;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .tabs-group.fill {
+        .tabs-content{
+            background-color: #000;
+        }
+
+        .tabs-title.is-active a [data-svg] path{
+            fill: currentColor;
+        }
+    }
+
+
+
+    // Exercícios
+    .exercicio-alternativas {
+        .lista-alternativas {
+            .alternativa{
+                .texto{
+                    background: transparent;
+                    border: 2px solid #ff0;
+                    color: #fff;
+
+                    .ui-icon {
+                        border-color: #ff0;
+                        background-color: #ff0;
+
+                        &:before{
+                            background-color: #ff0;
+                        }
+                    }
+                }
+
+                &.selecionada{
+                    .texto:not(.ui-checkboxradio-radio-label) .ui-icon:before{
+                        color: #000;
+                        background-color: #ff0;
+                    }
+
+
+                    .texto .ui-icon:before{
+                        background-color: #000;
+                    }
+                }
+                
+                &:not(.bloqueado) {
+                    &:not(.ui-checkboxradio-radio-label):hover .texto .ui-icon{
+                        background-color: #ff0;
+                        
+                        &:before{
+                            background-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    .exercicio {
+        .titulo-exercicio {
+            color: #fff;
+        }
+        
+        .questao {
+            color: #ff0;
+        }
+    }
+   
+}

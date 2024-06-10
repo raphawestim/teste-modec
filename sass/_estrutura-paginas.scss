@@ -1,0 +1,276 @@
+%sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.pagina {
+	width: 100%;
+	min-height: 100vh;
+	padding-top: $headerHeight;
+}
+
+.bloco-custom {
+	// Tokens
+	//padding-top: $distance-between-blocks;
+	padding-bottom: $distance-between-blocks;
+
+	position: relative;
+	width: 100%;
+
+	&.sem-espacamento {
+		padding: 0;
+
+		&-topo {
+			padding-top: 0;
+		}
+
+		&-base {
+			padding-bottom: 0;
+		}
+	}
+
+	&__topo {
+		min-height: 100dvh;
+		background-color: $color-brand-02-dark;
+		color: $color-neutral-00;
+		display: flex;
+		align-items: center;
+		.row {
+			width: 100%;
+		}
+		h1 {
+			color: $color-neutral-00;
+		}
+	}
+	&__final {
+		background-color: $color-brand-02-dark;
+		color: $color-neutral-00;
+		h1 {
+			color: $color-neutral-00;
+		}
+	}
+
+	> .row {
+		+ .row {
+			margin-top: 40px;
+			@include medium-up {
+				margin-top: 60px;
+			}
+		}
+	}
+}
+
+.bloco {
+	// Tokens
+	padding-top: $distance-between-blocks;
+	padding-bottom: $distance-between-blocks;
+
+	position: relative;
+	width: 100%;
+
+	&.sem-espacamento {
+		padding: 0;
+
+		&-topo {
+			padding-top: 0;
+		}
+
+		&-base {
+			padding-bottom: 0;
+		}
+	}
+
+	&__topo {
+		min-height: 100dvh;
+		background-color: $color-brand-02-dark;
+		color: $color-neutral-00;
+		display: flex;
+		align-items: center;
+		.row {
+			width: 100%;
+		}
+		h1 {
+			color: $color-neutral-00;
+		}
+	}
+	&__final {
+		background-color: $color-brand-02-dark;
+		color: $color-neutral-00;
+		h1 {
+			color: $color-neutral-00;
+		}
+	}
+
+	> .row {
+		+ .row {
+			margin-top: 40px;
+			@include medium-up {
+				margin-top: 60px;
+			}
+		}
+	}
+}
+
+.instrucao-navegacao {
+	position: relative;
+	text-align: center;
+	padding: 0 15px;
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+
+	&-conteudo {
+		position: relative;
+		display: inline-block;
+		border-radius: 4px;
+		padding: 10px 20px;
+		background: #3366ff;
+		color: #fff;
+		font-size: .8889em;
+		max-width: 600px;
+		@include medium-up {
+			width: 50%;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			width: 0;
+			height: 0;
+			border-bottom: 8px solid #3366ff;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			position: absolute;
+			top: -8px;
+			left: calc(50% - 8px);
+		}
+	}
+
+	[class*="icon"] {
+		display: block;
+		font-size: 32px;
+		@include medium-up {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.instrucao {
+		@include medium-up {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+.bloco-podcast {
+	position: relative;
+	display: table;
+	table-layout: fixed;
+	height: 100vh;
+	width: 100%;
+	
+	&-imagem {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-size: auto 125%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		opacity: .66;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#fff, .66);
+		}
+	}
+
+	&-conteudo {
+		position: relative;
+		z-index: 2;
+		display: table-cell;
+		vertical-align: bottom;
+		width: 100%;
+	}
+
+	.icone {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	[class*="titulo"] {
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 28px;
+	}
+}
+
+.img-wrap-radius{
+	border-radius: $border-radius-xl;
+	overflow: hidden;
+	display: inline-table;
+	margin-left: auto;
+	margin-right: auto;
+
+	//caso exista um tema ativo
+    [class*=tema] &{
+        border-radius: var(--border-radius-img);
+    }
+
+	+ p{
+		margin-top: $spacing-xxs;
+	}
+}
+
+.texto-wrap-coluna{
+	padding-right: $spacing-xs;
+	
+	&-left{
+		padding-right: 0;
+		padding-left: $spacing-xs;
+	}
+}
+
+.linha-divisoria{
+    height: 2px;
+    width: 96px;
+	border: 0;
+	margin-left: 0;
+	margin-right: 0;
+
+	// Tokens
+    background-color: $color-neutral-20;
+    margin-bottom: $spacing-xs;
+}
+
+.linha-divisoria-maior{
+	@extend .linha-divisoria;
+	width: 100%;
+}
+
+.linha-imagem-texto{
+	border: 0;
+
+	// Tokens
+	margin: $spacing-nano 0 $spacing-xxs;
+	height: $spacing-quark;
+	background-color: $color-brand-01-dark;
+	border-radius: $border-radius-pill;
+}

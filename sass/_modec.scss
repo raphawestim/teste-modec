@@ -1,0 +1,29 @@
+.rodape-custom{
+  background-image: url('../img/barra.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 189px;  // Ajuste de acordo com a sua necessidade
+    position: fixed;
+    top: 80%;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+
+    .logo{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: end;
+      position: absolute;
+      top: 40%;
+      left: 84%;
+
+      img{
+          width: 200px; // Ajuste de acordo com a sua necessidade
+      }
+
+      @include small-only {
+          top: 57%;
+          left: 70%;
+      }
+  }
+}

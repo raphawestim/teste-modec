@@ -1,0 +1,34 @@
+.exercicio {
+    position: relative;
+    
+    .enunciado {
+        margin: 0 auto 35px;
+    }
+
+    h4 {
+        font-weight: 500;
+        margin-bottom: 40px;
+
+        .font-family-dyslexia &{
+            font-family: $font-family-base-accessible;
+        }
+    }
+
+    h5 {
+        margin-bottom: 30px;
+        margin-top: 45px;
+
+        .font-family-dyslexia &{
+            font-family: $font-family-base-accessible!important;
+        }
+    }
+
+    .acoes {
+        margin: 45px auto 0;
+        text-align: center;
+    }
+}
+
+.hide-modal {
+    display: none;
+}

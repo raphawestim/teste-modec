@@ -1,0 +1,43 @@
+.scroll-indicator {
+    position: fixed;
+    bottom: 0;
+    right: 18px;
+    z-index: 5;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-brand-01-normal;
+    pointer-events: none;
+    transition: opacity .5s;
+    border-radius: 50%;
+    margin: 20px;
+    
+    @include medium-up {
+        width: 90px;
+        height: 90px;
+    }
+
+    &.hidden {
+        opacity: 0;
+    }
+
+    &::before {
+        content: "\0e809";
+        color: #fff;
+        font-family: $font-icones-index;
+        font-size: 30px;
+        text-align: center;
+        line-height: 1;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        -webkit-animation: bounceInfinite 2s infinite;
+        animation: bounceInfinite 2s infinite;
+        @include medium-up{
+            font-size: 40px;
+        }
+    }
+}

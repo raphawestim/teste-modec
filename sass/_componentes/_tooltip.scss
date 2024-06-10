@@ -1,0 +1,100 @@
+$tooltipCorBorda: #fff;
+$tooltipCorBg: #fff;
+$tooltipCorTexto: #767676;
+
+.tooltipstered {
+    border-bottom: 1px dotted currentColor;
+    cursor: help;
+
+    &:focus-visible{
+        outline: none;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            display: block;
+            content: " ";
+            position: absolute;
+            width: calc(100% + (2 * #{$spacing-quark}));
+            height: calc(100% + (2 * #{$spacing-quark}));
+            left: -$spacing-quark;
+            top: -$spacing-quark;
+            border-radius: $border-radius-xs;
+            border: solid $border-width-xs $color-focus;
+        }
+    }
+}
+
+.tooltipster-custom {
+    filter: drop-shadow(4px 0 12px rgba(#000, .15));
+
+    .tooltipster-content {
+        color: $tooltipCorTexto;
+        font-family: $font-family-base;
+        font-size: 1rem;
+        line-height: 1.2;
+        padding: 8px;
+
+        .font-family-dyslexia &{
+            font-family: $font-family-base-accessible!important;
+        }
+    }
+
+    .tooltipster-box {
+        border-color: $tooltipCorBorda;
+        background: $tooltipCorBg;
+        border-radius: 5px;
+    }
+
+    &.tooltipster-bottom {
+        .tooltipster-arrow-border {
+            border-bottom-color: $tooltipCorBorda;
+        }
+
+        .tooltipster-arrow-background {
+            border-bottom-color: $tooltipCorBg;
+        }
+    }
+
+    &.tooltipster-left {
+        .tooltipster-arrow-border {
+            border-left-color: $tooltipCorBorda;
+        }
+
+        .tooltipster-arrow-background {
+            border-left-color: $tooltipCorBg;
+        }
+    }
+
+    &.tooltipster-right {
+        .tooltipster-arrow-border {
+            border-right-color: $tooltipCorBorda;
+        }
+
+        .tooltipster-arrow-background {
+            border-right-color: $tooltipCorBg;
+        }
+    }
+
+    &.tooltipster-top {
+        .tooltipster-arrow-border {
+            border-top-color: $tooltipCorBorda;
+        }
+
+        .tooltipster-arrow-background {
+            border-top-color: $tooltipCorBg;
+        }
+    }
+}
+
+.tooltip-content {
+    @extend %sr-only;
+
+    &[aria-hidden="true"] {
+        display: none;
+    }
+
+    &[aria-hidden="false"] {
+        display: block;
+    }
+}

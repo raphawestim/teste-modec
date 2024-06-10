@@ -1,0 +1,120 @@
+.tabela {
+    tbody,
+    tfoot,
+    thead {
+        background-color: transparent;
+    }
+
+    thead {
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid $color-neutral-20;
+        text-transform: uppercase;
+
+        td {
+            color: $color-brand-01-normal;
+        }
+
+        th {
+            background-color: $color-brand-01-normal;
+            color: $color-contrast-text;
+            text-align: left;
+        }
+    }
+
+    tbody {
+        border: 0;
+
+        th {
+            text-align: left;
+            font-weight: normal;
+        }
+
+        td {
+            text-align: left;
+        }
+
+        tr {
+            &:nth-child(2n) {
+                background-color: transparent;
+            }
+        }
+    }
+
+    th,
+    td {
+        padding: 12px 30px;
+        border-bottom: 1px solid $color-neutral-20;
+
+        ~ th, ~ td {
+            border-left: 1px solid $color-neutral-20;
+        }
+    }
+
+    .text-center {
+        td, th {
+            text-align: center;
+        }
+    }
+
+    .destaque {
+        th,
+        td {
+            background-color: $color-brand-01-light;
+            color: $color-contrast-black;
+        }
+
+        &.positivo {
+            th,
+            td {
+                background-color: $color-semantic-success-normal;
+                color: $color-contrast-text;
+            }
+        }
+
+        &.negativo {
+            th,
+            td {
+                background-color: $color-semantic-danger-normal;
+                color: $color-contrast-text;
+            }
+        }
+    }
+
+    &.linhas {
+        thead {
+            td {
+                color: $color-contrast-black;
+            }
+
+            th {
+                background-color: transparent;
+                color: $color-contrast-black;
+            }
+        }
+        
+        .destaque {
+            th,
+            td {
+                background-color: transparent;
+                color: $color-brand-01-normal;
+            }
+
+            &.positivo {
+                th,
+                td {
+                    background-color: transparent;
+                    color: $color-semantic-success-normal;
+                }
+            }
+
+            &.negativo {
+                th,
+                td {
+                    background-color: transparent;
+                    color: $color-semantic-danger-normal;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+
+<curso id="rw000" nome="Design System">
+	<modulo id="m00" nome="Menu" ignorar="true">
+		<licao id="l00" tipo="menu" nome="Menu">
+			<tela tipo="menu" nome="Menu"></tela>
+		</licao>
+	</modulo>
+
+	<modulo id="m01" nome="Design System">
+		<licao id="l01" tipo="netcurso" nome="Títulos">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+		<licao id="l02" tipo="netcurso" nome="Textos e Imagens">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+		<licao id="l03" tipo="netcurso" nome="Cards">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+		<licao id="l04" tipo="netcurso" nome="Interativos">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+		<licao id="l05" tipo="netcurso" nome="Podcast">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+		<licao id="l06" tipo="netcurso" nome="Vídeo">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+		<licao id="l07" tipo="netcurso" nome="Onepage">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+	</modulo>
+	<!-- <modulo id="m02" nome="Nome do modulo">
+		<licao id="l01" tipo="netcurso" nome="Títulos">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+	</modulo> -->
+
+	<!-- <modulo id="m02" nome="Avaliação">
+		<licao id="l02" tipo="avaliacao" nome="Avaliação">
+			<tela tipo="tela" nome=""></tela>
+		</licao>
+	</modulo> -->
+</curso>

@@ -1,0 +1,25 @@
+.limite-progresso {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.barra-progresso {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #f0f0f0;
+
+    .barra {
+        background: #ec0000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        transition: width .2s;
+    }
+}

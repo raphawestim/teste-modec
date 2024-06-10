@@ -1,0 +1,209 @@
+$width-input: 24px;
+$height-input: 24px;
+$width-icon-answer: 40px;
+$height-icon-answer: 40px;
+
+.exercicio-alternativas {
+    .lista-alternativas {
+        position: relative;
+
+        .alternativa {
+            position: relative;
+            transition: transform .5s;
+        
+            ~ .alternativa {
+                // Tokens Spacing
+                margin-top: $spacing-quark;
+            }
+        
+            .texto {
+                position: relative;
+                transition: background-color .3s;
+                width: 100%;
+                text-align: left;
+                border: 2px solid transparent;
+                margin: 0;
+                
+                // Tokens Text
+                font-family: $font-family-base;
+                font-weight: $font-weight-400;
+                font-size: $font-size-xs;
+                color: $color-neutral-100;
+                line-height: $line-height-xl;
+
+                // Tokens Base
+                background-color: $color-neutral-00;
+                border-radius: $border-radius-sm;
+
+                // Tokens Spacing
+                padding: $spacing-xxs;
+                padding-left: calc(#{$spacing-xxs + $spacing-xxxs + $width-input});
+                padding-right: calc(#{$width-icon-answer + $spacing-xxs});
+
+                //caso exista um tema ativo
+                [class*=tema] &{
+                    border-radius: var(--border-radius-botao);
+                }                
+        
+                // Icon answer
+                &:after{
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 16px;
+                    transform: translateY(-50%);
+                    width: $width-icon-answer;
+                    height: $height-icon-answer;
+                }
+        
+                .font-family-dyslexia &{
+                    // Tokens Text
+                    font-family: $font-family-base-accessible!important;
+                }
+                
+                // Focus
+                &.ui-visual-focus {
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+                // &.ui-state-focus {
+                //     // Tokens
+                //     border: $border-width-xs solid $color-focus;
+                // }
+        
+                // Input checkbox
+                &:not(.ui-checkboxradio-radio-label){
+                    .ui-icon{
+                        // Tokens Radio Button
+                        border-radius: $border-radius-sm;
+                        
+                        &:before{
+                            content: "\e82a";
+                            font-size: 9px;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+                }
+        
+                .ui-icon {
+                    // Tokens - Shape
+                    background: $color-neutral-00;
+                    border-radius: $border-radius-circular;
+                    border: 2px solid $color-neutral-30;
+         
+        
+                    display: block;
+
+                    position: absolute;
+                    top: calc(#{$spacing-xxs + 4px});
+                    left: $spacing-xxs;
+                    
+                    
+                    
+                    width: $width-input;
+                    height: $height-input;
+                    box-shadow: none;
+                    
+                    &::before {
+                        font-family: $font-icones-index;
+                        font-size: 30px;
+                        text-align: center;
+                        line-height: 1;
+
+                        // Tokens
+                        border-radius: $border-radius-circular;
+        
+                        display: block;
+                        content: '';
+                        width: 16px;
+                        height: 16px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+        
+                [data-whatinput="mouse"] & {
+                    outline: 0;
+                }
+            }
+        
+            &.bloqueado{
+                .texto{
+                    // Tokens Element
+                    opacity: $opacity-level-medium;
+                }
+            }
+        
+            &:not(.bloqueado) {
+                &:hover {
+                    // Tokens Spacing
+                    transform: translateX($spacing-xxxs);
+
+                    .texto{        
+                        .ui-icon {
+                            // Tokens Radio Button
+                            background-color: $color-neutral-05;
+                        }
+                    }
+                }
+            }
+        
+            &.selecionada {
+                .texto {        
+                    .ui-icon {
+                        // Tokens Radio Button
+                        background-color: $color-neutral-05;
+        
+                        &:before{
+                            // Tokens Icon
+                            background-color: $color-brand-01-dark;
+                        }
+                    }
+                    
+                    &:not(.ui-checkboxradio-radio-label){
+                        .ui-icon {
+                            text-indent: 0;
+                            
+                            &:before{
+                                // Tokens Icon
+                                color: $color-brand-01-dark;
+
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            &.certo {
+                .texto {
+                    // Tokens Text
+                    background: $color-semantic-success-light;
+                    border-color: $color-semantic-success-normal;
+
+                    &:after{
+                        background: url('../img/icon-right.svg');
+                    }
+                }
+            }
+        
+            &.errado {
+                .texto {
+                    // Tokens Text
+                    background: $color-semantic-danger-light;
+                    border-color: $color-semantic-danger-normal;
+
+                    &:after{
+                        background: url('../img/icon-wrong.svg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+

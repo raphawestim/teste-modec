@@ -1,0 +1,265 @@
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    transition: font-size 0.3s ease;
+
+    // Tokens
+    font-family: $font-family-base;
+    line-height: $line-height-xl;
+    font-size: $font-size-xs;
+    color: $color-neutral-100;
+
+    // Acessibilidade
+    &[data-tamanho-fonte="1"] {
+        font-size: $font-size-sm;
+    }
+
+    &[data-tamanho-fonte="2"] {
+        font-size: $font-size-md;
+        line-height: $line-height-lg;
+    }
+
+    &.font-family-dyslexia {
+        font-family: $font-family-base-accessible !important;
+    }
+
+    &.conteudo-lateral-aberto {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color-brand-05-darkest, 0.8);
+            z-index: 111;
+        }
+
+        .area-conteudo {
+            pointer-events: none;
+        }
+    }
+}
+
+.limite-externo {
+    width: 100%;
+    height: 100%;
+    background-color: $color-neutral-05;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+
+    .menu-anchor-open &,
+    .menu-acessibilidade-open & {
+        &:after {
+            // Tokens
+            background-color: rgba($color-neutral-100, $opacity-level-intense);
+            display: block;
+            position: fixed;
+            z-index: 1;
+            content: "";
+            inset: 0;
+        }
+    }
+}
+
+.cabecalho {
+    // Tokens
+    height: $headerHeight;
+    background-color: $color-neutral-100;
+    color: $color-neutral-00;
+
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: $larguraCabecalhoMobile;
+    padding: 0 $spacing-xxxs;
+
+    .cabecalho-interno {
+        max-width: $larguraLimite;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+}
+
+.cabecalho-custom {
+    // Tokens
+    height: $headerHeight;
+    //background-color: $color-neutral-100;
+    color: $color-neutral-00;
+
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: $larguraCabecalhoMobile;
+    padding: 0 $spacing-xxxs;
+
+    .cabecalho-interno {
+        max-width: $larguraLimite;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+}
+
+.logo {
+    flex: 2;
+
+    svg path {
+        fill: currentColor;
+    }
+}
+
+.group-header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-header-custom {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.curso-dados {
+    .info {
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        > * {
+            // Tokens
+            font-family: $font-family-display;
+            font-weight: $font-weight-400;
+            font-size: $font-size-xxs;
+            color: $color-neutral-00;
+
+            display: none;
+            text-transform: uppercase;
+
+            .font-family-dyslexia & {
+                font-family: $font-family-base-accessible;
+            }
+        }
+
+        .nome-curso {
+            display: block;
+
+            @include small-only {
+                display: none;
+            }
+        }
+    }
+}
+
+.curso-nav {
+    display: flex;
+
+    ul,
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .grupo-topo {
+        // Tokens
+        color: red;
+
+        .itens-menu {
+            position: relative;
+        }
+    }
+
+    .grupo-base {
+        display: none;
+        color: $color-black;
+    }
+
+    .bt-menu-acessibilidade {
+        border: 2px solid currentColor;
+    }
+
+    [class*="bt-"] {
+        // Tokens
+        border-radius: $border-radius-circular;
+
+        color: currentColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        margin-left: 15px;
+        width: 48px;
+        height: 48px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .label-texto {
+            color: $color-contrast-text;
+            margin-left: 5px;
+            font-size: 0.75rem !important;
+
+            @include small-only {
+                display: none;
+            }
+        }
+    }
+}
+
+.conteudo-principal {
+    position: relative;
+    width: 100%;
+
+    .conteudo-principal-interno {
+        width: 100%;
+        min-height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+[data-tipo-tela="menu"] {
+    .curso-nav .grupo-topo > nav {
+        .itens-menu {
+            display: block;
+
+            ~ .itens-menu {
+                display: none;
+            }
+        }
+    }
+}
+
+[data-tipo-licao="podcast"],
+[data-tipo-licao="avaliacao"] {
+    .curso-nav .grupo-topo > nav li:first-child {
+        display: none;
+    }
+}

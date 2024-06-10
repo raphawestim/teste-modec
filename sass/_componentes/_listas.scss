@@ -1,0 +1,116 @@
+.lista {
+    margin: 30px auto 30px 15px;
+    @include medium-up {
+        margin: 30px auto 30px 60px;
+    }
+
+    li {
+        position: relative;
+        padding-left: 30px;
+        list-style-type: none;
+
+        &::before {
+            content: "";
+            background-color: #ec0000;
+            display: block;
+            height: 6px;
+            width: 6px;
+            border-radius: 100%;
+            position: absolute;
+            top: .67em;
+            left: 0;
+        }
+
+        ~ li {
+            margin-top: 30px;
+        }
+    }
+}
+
+.lista-linha {
+    margin: 45px 0 30px;
+
+    li {
+        list-style-type: none;
+
+        ~ li {
+            margin-top: 30px;
+            padding-top: 45px;
+            border-top: 1px solid #e7e7e7;
+        }
+    }
+}
+
+.lista-ordenada {
+    margin: 0 auto 20px 20px;
+    counter-reset: contador;
+
+    li {
+        list-style-type: none;
+        position: relative;
+        padding-left: 38px;
+        counter-increment: contador;
+
+        &::before {
+            content: counter(contador) " -";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 33px;
+            text-align: right;
+        }
+    }
+}
+
+dl {
+    dt {
+        font-family: $font-family-display;
+        font-weight: bold;
+        font-size: $fontSizePadrao * 1.11111;
+        color: #40298c;
+
+        .font-family-dyslexia &{
+            font-family: $font-family-base-accessible;
+        }
+    }
+
+    dd {
+        margin-bottom: 20px;
+    }
+}
+
+.lista-icone-texto{
+    margin-left: 0;
+    
+    .item{
+        display: flex;
+        margin-top: $spacing-xs;
+        
+        .shape-icon{
+            flex: 0 0 80px;
+
+            // Tokens
+            background-color: $color-neutral-00;
+            margin-right: $spacing-xxs;
+
+            [data-svg]{
+                display: flex;
+            }
+        }
+
+        .texto{
+            h6{
+                font-weight: $font-weight-500;
+            }
+
+            h6 + *{
+                margin-top: $spacing-nano;
+            }
+
+            p:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

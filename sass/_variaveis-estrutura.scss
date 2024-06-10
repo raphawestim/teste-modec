@@ -1,0 +1,26 @@
+$larguraLimite: 1200px;
+
+$headerHeight: 64px;
+$larguraCabecalho: 100%;
+$alturaCabecalhoMobile: 100%;
+$larguraCabecalhoMobile: 100%;
+
+$distance-between-blocks: calc(#{$spacing-huge} / 2);
+
+$alturaRodape: 1px;
+$larguraRodape: 100%;
+
+
+$fontSizePadrao: $font-size-xs;
+$fontSizePadraoMaior1: $font-size-sm;
+$fontSizePadraoMaior2: $font-size-md;
+
+$corTexto: $color-neutral-100;
+
+
+$color-title-default: $color-brand-05-darkest;
+
+
+// Fonte Ícones
+$font-icones-index: "icones-index";
+$font-icones-conteudo: "icones-conteudo";

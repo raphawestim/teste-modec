@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<configuracoes>
+
+	<modoDesenvolvimento>true</modoDesenvolvimento>
+
+	<midiaStreaming>false</midiaStreaming>
+	<caminhoStreaming></caminhoStreaming>
+	<caminhoMidiaLocal>data/midia/</caminhoMidiaLocal>	
+	
+	<plataforma><![CDATA[]]></plataforma>
+	<mensagemFinalizacao><![CDATA[<p>Mensagem de finalização da plataforma<p>]]></mensagemFinalizacao>
+
+</configuracoes>
